@@ -27,7 +27,7 @@ function Evenements() {
 }
 
 function sites() {
-    location.href = "./sites.html";
+    location.href = "./Sites.html";
 }
 
 function infos() {
