@@ -23,7 +23,7 @@ function connecter() {
 }
 
 function Evenements() {
-    location.href = "./Evenements.html";
+    location.href = "./evenements.html";
 }
 
 function sites() {
