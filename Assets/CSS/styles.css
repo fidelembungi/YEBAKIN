@@ -1,0 +1,1212 @@
+*{
+  font-family: 'Franklin Gothic Book';
+}
+
+.ff-1{
+  font-family: Cochin ;
+}
+#connect-center{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-outline-primary{
+  border: solid 1px #ED4219;
+}
+.btn-outlines-primary{
+  border: solid 1px #0D6EFD;
+  color: #0D6EFD;
+}
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    /* Plus haut que les autres éléments */
+}
+tr{
+  font-family: 'Lucida Fax';
+}
+.lists{
+  list-style: decimal-leading-zero;
+}
+.list{
+  list-style: disc;
+}
+.spinner {
+  width: 4rem;
+  height: 4rem;
+  border: 0.6rem solid transparent;
+  border-top: 0.6rem solid #ED4219;
+  /* Couleur 1 : Bleu */
+  border-bottom: 0.6rem solid #ED4219;
+  /* Couleur 1 : Bleu */
+  border-left: 0.6rem solid #ED4219;
+  /* Couleur 1 : Bleu */
+  border-right: 0.6rem solid transparent;
+  /* Couleur 2 : Rouge */
+  border-radius: 50%;
+  animation: spin 1.3s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.b {
+  font-weight: bold;
+}
+input{
+  box-shadow: 0 0 0 0 !important;
+  outline: 0 0 0 0 !important;
+
+}
+li{
+  font-family: Tahoma;
+  font-size: 1.2em;
+}
+a{
+  font-family: 'Tahoma';
+  font-size: 1.2em;
+}
+li.text-justify{
+  padding-left: 1em;
+}
+b{
+  font-style: bold;
+}
+.verdana{
+  font-family: verdana;
+}
+.img-fr{
+  height: 8em;
+  width: 100%;
+}
+#delete{
+  display: none;
+}
+.absolue{
+  position: absolute;
+}
+fidele{
+  padding-left: 4em;
+}
+.style-none{
+  list-style: none;
+}
+.li-square{
+  list-style: square;
+}
+body {
+  background-color: #f5f5f5;
+}
+.card-header {
+  border: none;
+}
+.kin-img{
+  height: 15em;
+  width: 100%;
+}
+.kin-visit{
+  height: 19em;
+  width: 100%;
+}
+.img-shop{
+  height: 14em;
+  width: 100%;
+}
+.li-none{
+  list-style: none;
+}
+.kin-div {
+  background: url(../../Images/pullman.jpg);
+  height: 255px;
+  background-position: center;
+  background-size: cover;
+}
+.button-div {
+  background: url(../../Images/kinshasa_boulevard_nuit.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.image-card {
+  height: 50%;
+  width: 50%;
+}
+.lucida-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.modal-content img {
+  border-radius: 5px;
+}
+.map-adresse iframe {
+  border-radius: 10px;
+  width: 100%;
+}
+.card-img-top {
+  border-radius: none;
+}
+.img-fluid {
+  border-radius: 10px;
+}
+.btn-close {
+  background-color: #ED4219;
+}
+.titre {
+  color: #003366;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.s-titre {
+  color: #0066cc;
+  font-size: 1.1rem;
+}
+.g-titre {
+  font-size: 1.22rem;
+}
+.menu {
+  font-size: 16px;
+}
+#mapskin {
+  height: 30vh;
+}
+.text-justify {
+  text-align: justify;
+}
+
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.embruyeur {
+  height: 50px;
+  background-color: 30px solid red;
+}
+iframe {
+  width: 100%;
+}
+.info-card {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+.presentation {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+h1 {
+  font-size: 22px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.logo:hover .bouton-menu {
+  height: 35px;
+  font-size: 16px;
+}
+button.bouton-menu:hover {
+  border: none;
+  border-bottom: solid 1px white;
+  background-color: #f19316;
+  letter-spacing: 1px;
+  padding-block-start: 1px;
+  transition: 1s;
+}
+button.bouton-menu:focus {
+  border: none;
+  border-bottom: solid 1px white;
+  background-color: #f19316;
+  letter-spacing: 1px;
+  padding-block-start: 1px;
+  transition: 1s;
+}
+.info-by-night {
+  background-image: url("../../Images/Kin-by-night.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: contrast();
+}
+.info-by-night::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../Images/Kin-by-night.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(3px);
+}
+.info-sejour {
+  background-image: url("../../Images/noel-kin.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: contrast();
+}
+.info-sejour::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../Images/noel-kin.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(3px);
+}
+.info-evenements {
+  background-image: url("../../Images/casino.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: contrast();
+}
+
+.info-evenements::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../Images/casino.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(3px);
+}
+.info-sites {
+  background-image: url("../../Images/chutte-nature.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: contrast();
+}
+.info-sites::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../Images/chutte-nature.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(3px);
+}
+.info-pop {
+  background-image: url("../../Images/kinnnn.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: contrast();
+}
+.info-pop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../Images/kinnnn.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(3px);
+}
+.footer {
+  background-color: black;
+}
+.info-histo {
+  background-image: url("../../Images/congo-kin-fleuve.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: contrast();
+}
+.info-histo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../Images/congo-kin-fleuve.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(3px);
+}
+img {
+  cursor: pointer;
+}
+.bg-p {
+  background-color: #ED4219;
+}
+/* Styles généraux */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* Cartes */
+.card {
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+/* Boutons */
+.btn-primary {
+  background-color: #ED4219;
+  border: none;
+}
+.btns-primary {
+  background-color: #0D6EFD;
+  border: none;
+}
+.fw-bold{
+  padding-top: 25px;
+}
+.animation{
+  color :#ed4319e8;
+}
+.animation-outline{
+  color :#ed4319e8;
+  border-color: #ed4319e8;
+}
+.animation-outline:hover{
+  color: #FFFFF9;
+  transition: 1s;
+  border-color: #D80E5D;
+}
+.animation-outline:focus{
+  box-shadow: 0 0 0 0 !important;
+  outline: 0 0 0 0 !important;
+}
+.animation-outline::after{
+  box-shadow: 0 0 0 0 !important;
+  outline: 0 0 0 0 !important;
+  color :#ed4319e8;
+  border-color: #ed4319e8;
+}
+.animations-outline::after{
+  box-shadow: 0 0 0 0 !important;
+  outline: 0 0 0 0 !important;
+  color :#0D6EFD;
+  border-color: #0D6EFD;
+}
+.animation:hover{
+  color: #D80E5D;
+  transition: 1s;
+}
+.btn-primary:hover {
+  background-color: #D80E5D;
+}
+.btns-primary:hover {
+  background-color: #0D6EFD;
+  
+}
+.btn-outline-primary:hover {
+  background-color: #D80E5D;
+}
+.btn-outlines-primary:hover {
+  background-color: #0D6EFD;
+  color: #ffff;
+}
+
+/* Pied de page */
+footer {
+  font-size: 0.9rem;
+}
+.nav-bg {
+  background-color: #ed4319e8;
+}
+.pointer-none {
+  pointer-events: none;
+}
+.m-92 {
+  margin-left: 92%;
+}
+.pointer {
+  cursor: pointer;
+}
+header.transport {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.style-card {
+  background: url(../../Images/istockphoto-1455399728-1024x1024.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card01 {
+  background: url(../../Images/hotel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card02 {
+  background: url(../../Images/restau-kin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card03 {
+  background: url(../../Images/Transport.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card04 {
+  background: url(../../Images/nsele.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card05 {
+  background: url(../../Images/echangeur-night.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card06 {
+  background: url(../../Images/kinnnn.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card07 {
+  background: url(../../Images/nsele.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card08 {
+  background: url(../../Images/img8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card09 {
+  background: url(../../Images/kin4.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card010 {
+  background: url(../../Images/Losso_madesu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card011 {
+  background: url(../../Images/H1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card012 {
+  background: url(../../Images/S1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card013 {
+  background: url(../../Images/congo-kin-fleuve.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card014 {
+  background: url(../../Images/savoir.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.style-card015 {
+  background: url(../../Images/restau-kin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  height: 273px;
+  position: relative;
+}
+.card1 {
+  background: url(../../Images/Kalamu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card01 {
+  background: url(../../Images/pullman.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card02 {
+  background: url(../../Images/restau-kin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card03 {
+  background: url(../../Images/Transport.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card04 {
+  background: url(../../Images/nsele.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card2 {
+  background: url(../../Images/chutte-nature.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card3 {
+  background: url(../../Images/hjk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card41 {
+  background: url(../../Images/kinshasa_boulevard_nuit.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card42 {
+  background: url(../../Images/Kin-by-night.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card51 {
+  background: url(../../Images/kin-belle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card52 {
+  background: url(../../Images/congo-kin-fleuve.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card61 {
+  background: url(../../Images/Kasa-vubu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card62 {
+  background: url(../../Images/Kin1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card63 {
+  background: url(../../Images/Makala.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card64 {
+  background: url(../../Images/ngaliema.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card65 {
+  background: url(../../Images/S2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card71 {
+  background: url(../../Images/Kinshasa.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card72 {
+  background: url(../../Images/kin2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card73 {
+  background: url(../../Images/kin5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card81 {
+  background: url(../../Images/Masina.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card82 {
+  background: url(../../Images/Gombe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card83 {
+  background: url(../../Images/kin-belle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card84 {
+  background: url(../../Images/Kalamu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card090 {
+  background: url(../../Images/fumbwa2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card092 {
+  background: url(../../Images/fumbwa.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card091 {
+  background: url(../../Images/Madesu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card90 {
+  background: url(../../Images/H1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card92 {
+  background: url(../../Images/H2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+li.nav-item.dropdown button.dropdown-toggle.btn:hover {
+  border-bottom: white solid 1px;
+  transition: 0.5s;
+}
+.card000 {
+  background: url(../../Images/S2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card0001 {
+  background: url(../../Images/S1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card0002 {
+  background: url(../../Images/S2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card91 {
+  background: url(../../Images/H3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card101 {
+  background: url(../../Images/casino.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card102 {
+  background: url(../../Images/kinnnn.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card103 {
+  background: url(../../Images/kin-belle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card104 {
+  background: url(../../Images/kin4.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card105 {
+  background: url(../../Images/vecteezy_visa-logo-vector-visa-icon-free-vector_20336391.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card106 {
+  background: url(../../Images/inventaire-et-recherche-dinformations-anquantes-768x512.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card107 {
+  background: url(../../Images/vaccin-covid-19-generique.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card108 {
+  background: url(../../Images/images.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card109 {
+  background: url(../../Images/Screenshot_20241029-153948_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card110 {
+  background: url(../../Images/restau-kin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card1000 {
+  background: url(../../Images/kinshasa_boulevard_nuit.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card1001 {
+  background: url(../../Images/Screenshot_20241029-153948_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card1002 {
+  background: url(../../Images/hjk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card1003 {
+  background: url(../../Images/Madesu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card1004 {
+  background: url(../../Images/fumbwa2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-style-text {
+  padding-top: 175px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: unset;
+}
+.card-style-text1 {
+  padding-top: 135px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: unset;
+}
+.card-style-text-info {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: justify;
+}
+.card-style-text-info {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: justify;
+}
+.bg-main{
+  background: url(../../Images/transport1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-res{
+  background: url(../../Images/Restaurants/restaurants.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-ress{
+  background: url(../../Images/Manger_kinois/ngulu.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.borders{
+  border-bottom: solid #ED4219 1px;
+}
+.carousel-item {
+  height: 28em;
+}
+.carousel-caption {
+  font-family: cambria;
+  font-size: 14px;
+}
+.bg-art{
+  background: url(../../Images/art.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-night{
+  background: url(../../Images/Boites/metro\ \(3\).jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-savoir{
+  background: url(../../Images/unite\ 1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-hotel{
+  background: url(../../Images/Hotels/Hotel.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-sites{
+  background: url(../../Images/lion.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-infos{
+  
+  background: url(../../Images/congo-kin-fleuve.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-edifices{
+  background: url(../../Images/Edifices/centre_financier\ 1.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-theme{
+  background: url(../../Images/kinshasa_boulevard_nuit.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg-accueil{
+  background: url(../../Images/ech.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.bg-Eglise{
+  background: url(../../Images/Edifices/cathedrale\ 3.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.bg-places{
+  background: url(../../Images/bg-place.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.border-bottom-light{
+  border-bottom: 1px transparent solid;
+  border-radius: none; 
+}
+.border-bottom-light:hover{
+  border-bottom: #FFFF solid 1px;
+  border-radius: 5px;
+}
+.menu-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.m-9{
+  margin-left: 83%;
+  margin-top: 54px;
+}
+.br-5{
+  border-radius: 15px;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0.1);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(0.2);
+    opacity: 0.1;
+  }
+  20% {
+    transform: scale(0.3);
+    opacity: 0.2;
+  }
+  30% {
+    transform: scale(0.4);
+    opacity: 0.3;
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: scale(0.5);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(0.6);
+    opacity: 0.5;
+    transform: translateY(5px);
+  }
+  60% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+  70% {
+    transform: scale(0.8);
+    opacity: 0.5;
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animations {
+  display: inline-block;
+  font-size: 2.2em;
+  animation: bounce 4s ease;
+  animation: zoom 2s ease;
+}
+.leads{
+  font-size: 1.4em;
+}
+.text-yebakin{
+  color: #ED4219;
+}
+.cursor{
+  cursor: pointer;
+}
+.item3 {
+  background-image: url("./Images/kin-belle.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item2 {
+  background-image: url("./Images/Kin-by-night.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item1 {
+  background-image: url("./Images/nature1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-item {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.info-card {
+  min-height: 200px;
+}
+
+.card-body h5 {
+  font-size: 1.25rem;
+}
+.li{
+  list-style-type: decimal-leading-zero;
+}
+
+.color-1{
+  border: 3px solid #760067;
+  color: #760067;
+}
+
+.text1{
+  color: #760067;
+}
+
+.color-2{
+  border: 3px solid #3f00a5;
+  color: #3f00a5;
+}
+
+.text2{
+  color: #3f00a5;
+}
+
+.color-3{
+  border: 3px solid #0f8300;
+  color: #0f8300;
+}
+
+.text3{
+  color: #0f8300;
+}
+
+.color-4{
+  border: 3px solid #944700;
+  color: #944700;
+}
+
+.text4{
+  color: #944700;
+}
+
+.color-5{
+  border: 3px solid #005d6d;
+  color: #005d6d;
+}
+
+.text5{
+  color: #005d6d;
+}
+
+.color-6{
+  border: 3px solid #440017;
+  color: #440017;
+}
+
+.text6{
+  color: #440017;
+}
+.pb-10{
+  padding-bottom: 25%;
+}

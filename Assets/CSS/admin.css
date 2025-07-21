@@ -1,0 +1,120 @@
+:root {
+    --header-bg: #5b0082;
+    --header-text: #ffffff;
+    --header-hover: #5c6bc0;
+    --sidebar-bg: #5b0082;
+    --sidebar-text: #ffffff;
+    --sidebar-hover: #3f51b5;
+    /*#3f51b5*/
+    --sidebar-active: #1e88e5;
+    --main-bg: #ffffff;
+    --main-text: #ffffff;
+    /*#000000*/
+    --main-card-bg: #5b0082;
+    /*#c5cae9*/
+    --main-card-border: #5c6bc0;
+    --accent-color: #5b0082;
+    --danger-color: #f44336;
+    --success-color: #4caf50;
+
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--header-bg);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 250px;
+    z-index: 100;
+    padding: 0 1rem;
+    transition: all 0.3s;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    z-index: 999999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar-profile {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--sidebar-active);
+}
+
+.sidebar-menu {
+    padding: 1rem 0;
+}
+
+.menu-item {
+    padding: 0.75rem 1rem;
+    color: var(--sidebar-text);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.menu-item:hover {
+    background-color: var(--sidebar-hover);
+}
+
+.submenu {
+    padding-left: 2rem;
+    display: none;
+}
+
+.rotate-icon {
+    transition: transform 0.3s;
+}
+
+.rotate-icon.active {
+    transform: rotate(90deg);
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 2rem;
+    transition: all 0.3s;
+}
+
+.card {
+    background-color: var(--main-card-bg);
+    border: 0;
+    /*1px solid var(--main-card-border)*/
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .header {
+        left: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
