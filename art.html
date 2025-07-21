@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="aothor" content="CreaTech Groupe & ONT / APKIN" />
+    <meta name="description"
+        content="Visiter et vivez des séjour touristique, amusant et inoubliable de la ville de Kinshasa capitale de RD Congo" />
+    <meta name="keywords" content="ONT, APKIN, YEBAKIN, Tourisme à Kinshasa, RDC Tourisme, CreaTech" />
+    <meta name="creator" content="CreaTech & APKIN" />
+    <link rel="short icon" href="./Images/ont.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSEES, GALLERIES D’ARTS ET SALLES DES SPECTACLES à Kinshasa</title>
+    <link rel="stylesheet" href="./Assets/FONTAWESOME/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+
+    <style>
+        @import url(Assets/CSS/fidele.css);
+        @import url(Assets/CSS/styles.css);
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="bg-success-subtle" id="loader">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <div>
+                    <h1 class="text-center text-yebakin loader" style="font-size: 2.8em;"> YEBA Kin </h1>
+                </div>
+            </div>
+            <div class="col-12 py-4 text-center">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2">
+                            <!-- Spinner de Bootstrap -->
+                            <div class="spinner p-4 d-flex justify-content-center " role="status">
+                                <i class="">
+
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center text-yebakin" style="font-size: 1.6em;">
+                        Veuillez patienter
+                    </span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center py-2 text-yebakin" style="font-size: 1.1em;">
+                        En cours de chargement...
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+      <div class="container-fluid nav-bg fixed-top entete2">
+        <div class="row d-flex justify-content-between align-items-center px-2">
+          <div class="navbar d-flex text-light text-center col-lg-1 d-none d-lg-flex">
+            <div class="d-flex align-items-center">
+              <img src="./Images/ONT1.png" alt="Logo" class="img-fluid rounded-circle logo" />
+              <h4 class="navbar-brand text-light ok-titre ps-3 pointer-none">
+                YEBA KIN
+              </h4>
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-dark col-md-10 col-lg-11 d-flex justify-content-between">
+            <div class="align-items-center">
+              <img src="./Images/ONT1.png" alt="Logo" class="img-fluid d-lg-none rounded-circle logo" />
+              <a class="navbar-brand d-lg-none lucida-text ok-titre pointer-none">
+                YEBA KIN
+              </a>
+            </div>
+            <button class="navbar-toggler text-end text-light btn-menu bouton-menu" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-end"> </span>
+              <span class="lucida-text menu"> Menu </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <button class="btn border-bottom-light bg-transparent text-light" onclick="Accueil();">
+                    Accueil
+                  </button>
+                </li>
+                <li class="nav-item dropdown">
+                  <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                    onclick="Apropos();">
+                    A propos
+                  </button>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Découvertes
+                  </button>
+                  <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                        onclick="themathique();">
+                        Thématique
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                        onclick="Edifices_publiques();">
+                        Edifices publics
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                        onclick="place_publique();">
+                        Places publiques
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                        onclick="infos();">
+                        Information utiles
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                        onclick="sites();">
+                        Sites et Attractions
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                        onclick="cartos();">
+                        Cartographie de Kinshasa
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Séjour à Kin
+                  </button>
+                  <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                        onclick="shopping();">
+                        Shopping
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                        onclick="transports();">
+                        Transport
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                        onclick="restaurants();">
+                        Restaurations
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                        onclick="hebergements();">
+                        Hebergements
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                        onclick="loisir();">
+                        Sports et Loisirs
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Circuits
+                  </button>
+                  <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                        Kin à vélo
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                        onclick="excursion();">
+                        Excursion
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                        Village Touristique
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                        onclick="Randonnees();">
+                        Kin et ses environs
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                        onclick="Randonnees();">
+                        Randonnées Fluviales
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                        Kin en 3 Jours et en 7 Jours
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                        Wewa Tour (Trycicles et motos)
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                    onclick="Evenements();">
+                    Evenements
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                    onclick="boites();">
+                    Kin By Night
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                    onclick="services();">
+                    Services
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                    onclick="contacts();">
+                    Contacts
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <main class="py-3">
+          <header class="bg-art text-white py-5">
+              <div class="container text-center pt-5">
+                  <h1 class="h2">Culture, Art et Artisanat</h1>
+                  <p class="lead pb-4">
+                      <marquee behavior="" direction="">
+                        Découvrez les meilleures MUSEES, GALLERIES D’ARTS ET SALLES DES SPECTACLES pendant votre
+                        séjour inoubliable dans la capitale congolaise.
+                      </marquee>
+                  </p>
+                  
+              </div>
+          </header>
+
+          <div class="container" id="centre">
+              <div class="row mb-5">
+                  <div class="col-12 text-center">
+                      <h2 class="h4 py-3">
+                          Nos recommandations <span class="animation"></span>
+                      </h2>
+                  </div>
+              </div>
+
+              <!-- Liste des restaurants -->
+              <div class="row g-4 d-flex justify-content-around">
+                  <!-- Restaurants -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                      <div class="card shadow-sm">
+                          <img src="Images/musee (2).jpg" class="card-img-top" alt="Musée National de la RDC"
+                              onclick="arts('musee');" />
+                          <div class="card-body">
+                              <h5 class="card-title"> Musée National de la RDC</h5>
+                              <p class="card-text text-muted text-justify">
+                                  Le musée regorge de masques et autres œuvres d’arts en sculpture, des objets usuels
+                                  tribaux, des objets archéologiques et historiques.
+                              </p>
+                              <a onclick="arts('musee');" class="btn btn-primary w-100">Voir plus</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                      <div class="card shadow-sm">
+                          <img src="Images/ABA (5).jpeg" class="card-img-top" alt="Académie des Beaux-Arts"
+                              onclick="arts('ABA');" />
+                          <div class="card-body">
+                              <h5 class="card-title">Académie des Beaux-Arts</h5>
+                              <p class="card-text text-muted text-justify">
+                                  La sculpture, la peinture, la céramique, le métal battu, la
+                                  publicité, la décoration intérieure et la conservation et restauration des
+                                  œuvres d’art
+                              </p>
+                              <a href="#" class="btn btn-primary w-100" onclick="arts('ABA');">Voir plus</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                      <div class="card shadow-sm">
+                          <img src="Images/symphonie (3).jpeg" class="card-img-top" alt="Galerie Symphonie des Arts"
+                              onclick="arts('GSA');" />
+                          <div class="card-body">
+                              <h5 class="card-title">Galerie Symphonie des Arts</h5>
+                              <p class="card-text text-muted text-justify">
+                                  La symphonie des arts, est un lieu dédié à l’art et au beau en général, et situé à
+                                  quelques minutes du centre-ville. C’est un jardin tropical enchanteur.
+                              </p>
+                              <a class="btn btn-primary w-100" onclick="arts('GSA');">Voir plus</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                      <div class="card shadow-sm">
+                          <img src="Images/CCC (1).jpeg" class="card-img-top" alt="Centre Culturel Congolais"
+                              onclick="arts('INA');" />
+                          <div class="card-body">
+                              <h5 class="card-title">Centre Culturel et Artistiques pour les Pays de l’Afrique Centrale</h5>
+                              <p class="card-text text-muted text-justify">
+                                  L’INA est la toute première institution du pays formant des artistes musiciens,
+                                  cinéastes et dramaturges, etc.
+                              </p>
+                              <a onclick="arts('INA');" class="btn btn-primary w-100">Voir plus</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Ajouter les autres hôtels ici -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                      <div class="card shadow-sm">
+                          <img src="Images/wallonie (4).jpeg" class="card-img-top"
+                              alt="Délégation Générale Wallonie Bruxelles" onclick="arts('DWB');" />
+                          <div class="card-body">
+                              <h5 class="card-title">Délégation Générale Wallonie Bruxelles</h5>
+                              <p class="card-text text-muted text-justify">
+                                  La Délégation générale Wallonie Bruxelles en R.D. Congo est la représentation
+                                  diplomatique et l’instrument d’action en République Démocratique du Congo.
+                              </p>
+                              <a onclick="arts('DWB');" class="btn btn-primary w-100">Voir plus</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                      <div class="card shadow-sm">
+                          <img src="Images/institut français (3).jpeg" class="card-img-top"
+                              alt=" Institut Français de Kinshasa" onclick="arts('IFK');" />
+                          <div class="card-body">
+                              <h5 class="card-title"> Institut Français de Kinshasa</h5>
+                              <p class="card-text text-muted text-justify">
+                                  L’Institut
+                                  français, c’est également un centre d’apprentissage du français à travers les
+                                  sessions
+                                  de formations certifiées en français et Campus France
+                              </p>
+                              <a onclick="arts('IFK');" class="btn btn-primary w-100">Voir plus</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                      <div class="card shadow-sm">
+                          <img src="Images/valeurs (5).jpeg" class="card-img-top" alt="Marché des Valeurs"
+                              onclick="arts('Marches');" />
+                          <div class="card-body">
+                              <h5 class="card-title">Marché des Valeurs</h5>
+                              <p class="card-text text-muted text-justify">
+                                  Cet endroit est le paradis des collectionneurs. Artistes et artisans s’y retrouvent
+                                  pour
+                                  proposer dans une ambiance bon enfant, leurs œuvres et cela à des prix très
+                                  abordables aux visiteurs.
+                              </p>
+                              <a onclick="arts('Marches');" class="btn btn-primary w-100">Voir plus</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                      <div class="card shadow-sm">
+                          <img src="Images/centre 1.jpg" class="card-img-top" alt="Centre culturel Congolais"
+                              onclick="arts('CCC');" />
+                          <div class="card-body">
+                              <h5 class="card-title">Centre Culturel Congolais</h5>
+                              <p class="card-text text-muted text-justify">
+                                  Ce centre est l’un des plus anciens espaces officiels dédiés à la diffusion et à la
+                                  promotion de la culture et de la création artistique congolaise.
+                              </p>
+                              <a onclick="arts('CCC');" class="btn btn-primary w-100">Voir plus</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+      <div class="d-none d-sm-flex col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 m-92 fin">
+          <div class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                      <img src="Images/Restaurants/le-cercle-gourmand.jpg" class="d-block img-fluid cr"
+                          alt="Restaurant" />
+                  </div>
+                  <div class="carousel-item text-center">
+                      <img src="Images/Restaurants/la perle.jpg" class="d-block img-fluid cr" alt="Hotel" />
+                  </div>
+                  <div class="carousel-item align-items-center text-center">
+                      <img src="Images/Restaurants/hevea-italian-restaurant.jpg" class="d-block img-fluid cr"
+                          alt="Sites" />
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-none d-sm-flex col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 fin">
+          <div class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                      <img src="Images/Restaurants/le-cafe-conc.jpg" class="d-block img-fluid cr" alt="Restaurant" />
+                  </div>
+                  <div class="carousel-item text-center">
+                      <img src="Images/Restaurants/o-poeta.jpg" class="d-block img-fluid cr" alt="Hotel" />
+                  </div>
+                  <div class="carousel-item align-items-center text-center">
+                      <img src="Images/Restaurants/le-mandarin.jpg" class="d-block img-fluid cr" alt="Sites" />
+                  </div>
+              </div>
+          </div>
+      </div>
+      <footer class="bg-dark text-white py-4">
+          <div class="container text-center">
+              <p>&copy; 2025 Hébergements Kinshasa. Tous droits réservés.</p>
+          </div>
+      </footer>
+    </div>
+
+
+
+    <script src="./Assets/bootstrap-5.3.3-dist/js/jquery.js"></script>
+    <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./Scripts/Js.js"></script>
+    <script src="./Scripts/typed.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+
+                document.getElementById('loader').style.display = 'none';
+                
+                document.getElementById('content').style.display = 'block';
+
+            });
+        });
+
+        var typed = new Typed(".animation", {
+            strings: [
+                "Sont séléctionnés",
+                "Sont les meilleurs",
+                "Sont les plus populaires",
+                "Sont les meilleurs services",
+            ],
+            typeSpeed: 60,
+            backSpeed: 20,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

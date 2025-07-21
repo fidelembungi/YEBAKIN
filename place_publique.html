@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="aothor" content="CreaTech Groupe & ONT / APKIN" />
+    <meta name="description"
+        content="Visiter et vivez des séjour touristique, 
+      amusant et inoubliable de la ville de Kinshasa capitale de RD Congo; parcs, sites touristiques, jardins, Kinshasa" />
+    <meta name="keywords"
+        content="ONT, APKIN, YEBAKIN, Tourisme à Kinshasa, RDC Tourisme, CreaTech, Jardin, parcs, sites" />
+    <title>Sites touristiques, Jardin et Parcs</title>
+    <meta name="creator" content="CreaTech & APKIN & Fidele mbungi" />
+    <link rel="stylesheet" href="./Assets/FONTAWESOME/css/font-awesome.min.css" />
+    <link rel="short icon" href="./Images/ont.png" />
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+
+    <style>
+        @import url(Assets/CSS/styles.css);
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .cr {
+            width: 100%;
+            height: 90px;
+            object-fit: cover;
+            border-radius: none;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-success-subtle" id="loader">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <div>
+                    <h1 class="text-center text-yebakin loader" style="font-size: 2.8em;"> YEBA Kin </h1>
+                </div>
+            </div>
+            <div class="col-12 py-4 text-center">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2">
+                            <!-- Spinner de Bootstrap -->
+                            <div class="spinner p-4 d-flex justify-content-center " role="status">
+                                <i class="">
+
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center text-yebakin" style="font-size: 1.6em;">
+                        Veuillez patienter
+                    </span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center py-2 text-yebakin" style="font-size: 1.1em;">
+                        En cours de chargement...
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="content">
+        <div class="container-fluid nav-bg fixed-top entete2">
+            <div class="row d-flex justify-content-between align-items-center px-2">
+                <div class="navbar d-flex text-light text-center col-lg-1 d-none d-lg-flex">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/ONT1.png" alt="Logo" class="img-fluid rounded-circle logo" />
+                        <h4 class="navbar-brand text-light ok-titre ps-3 pointer-none">
+                            YEBA KIN
+                        </h4>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-dark col-md-10 col-lg-11 d-flex justify-content-between">
+                    <div class="align-items-center">
+                        <img src="./Images/ONT1.png" alt="Logo" class="img-fluid d-lg-none rounded-circle logo" />
+                        <a class="navbar-brand d-lg-none lucida-text ok-titre pointer-none">
+                            YEBA KIN
+                        </a>
+                    </div>
+                    <button class="navbar-toggler text-end text-light btn-menu bouton-menu" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-end"> </span>
+                        <span class="lucida-text menu"> Menu </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn border-bottom-light bg-transparent text-light" onclick="Accueil();">
+                                    Accueil
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="Apropos();">
+                                    A propos
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Découvertes
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="themathique();">
+                                            Thématique
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="Edifices_publiques();">
+                                            Edifices publics
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="place_publique();">
+                                            Places publiques
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="infos();">
+                                            Information utiles
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="sites();">
+                                            Sites et Attractions
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="cartos();">
+                                            Cartographie de Kinshasa
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Séjour à Kin
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="shopping();">
+                                            Shopping
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="transports();">
+                                            Transport
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="restaurants();">
+                                            Restaurations
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="hebergements();">
+                                            Hebergements
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="loisir();">
+                                            Sports et Loisirs
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Circuits
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Kin à vélo
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="excursion();">
+                                            Excursion
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Village Touristique
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="Randonnees();">
+                                            Kin et ses environs
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="Randonnees();">
+                                            Randonnées Fluviales
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Kin en 3 Jours et en 7 Jours
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Wewa Tour (Trycicles et motos)
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="Evenements();">
+                                    Evenements
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="boites();">
+                                    Kin By Night
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="services();">
+                                    Services
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="contacts();">
+                                    Contacts
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main class="pt-5" id="centre">
+            <header class="bg-places text-white pt-5 pb-3">
+                <div class="container text-center pt-5">
+                    <h1 class="display-4">Places publiques à Kin</h1>
+                    <p class="lead">
+                        Découvrez les meilleures place publiques,incontestables pour un séjour
+                        inoubliable dans la capitale congolaise.
+                    </p>
+                    <marquee>
+                        <h4>
+                            <i> Place publiques </i>
+                        </h4>
+                    </marquee>
+                </div>
+            </header>
+            <div class="container">
+                <!-- Titre de la section -->
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold">
+                            Nos recommandations <span class="animation"></span>
+                        </h2>
+                        <p class="text-muted">
+                            Choisissez parmi nos suggestions soigneusement sélectionnées.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Liste des sites touristiques; jardins et parcs -->
+                <div class="row d-flex justify-content-around g-4" id="hotels">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/30 juin 1.webp" class="card-img-top" alt="Place du 30 juin"
+                                onclick="place('place_30_juin');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Place du 30 juin</h5>
+                                <p class="card-text text-muted text-justify">
+                                    L’ancienne place de la Gare, aujourd’hui rebaptisée « Place du 30 juin » lors des
+                                    festivités de la commémoration des 50 ans de l’indépendance du Congo, est l’une des
+                                    principales attractions de la ville de Kinshasa
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('place_30_juin');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/locomotive 1.jpg" class="card-img-top" alt="Première locomotive de la RDC"
+                                onclick="place('premiere');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Première locomotive de la RDC</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Le 3 juillet 1898 la première voie ferrée du Congo belge, reliant le port de Matadi
+                                    à la
+                                    capitale Léopoldville fut inaugurée officiellement par la “Compagnie des chemins de
+                                    fer du Congo”.De nombreux techniciens
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('premiere');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/memorial 1.jpg" class="card-img-top" alt="Mémorial du Soldat Congolais"
+                                onclick="place('memoriel');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Mémorial du Soldat Congolais</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Le Mémorial du Soldat Congolais, est le monument érigé en plein centre-ville de
+                                    Kinshasa au Rond-point FORESCOM en l’honneur de tous les militaires ayant servi et
+                                    qui servent encore la nation sous le drapeau
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('memoriel');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/pleureuse 1.jpg" class="card-img-top" alt="La pleureuse photos"
+                                onclick="place('pleureuse');" />
+                            <div class="card-body">
+                                <h5 class="card-title">La Pleureuse</h5>
+                                <p class="card-text text-muted text-justify">
+                                    « La pleureuse » est une statue émouvante en bronze, d’une femme congolaise en
+                                    pleurs, érigée devant la cour de cassation (ancienne cours suprême de Justice).
+                                    1973. C’est l’œuvre de l’artiste sculpteur Donatien Wuma Mbambila Ndombasi.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('pleureuse');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/place 1.jpg" class="card-img-top" alt="Place des évoluées"
+                                onclick="place('place');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Place des Evolués</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Observerez des zèbres, buffles, dromadaires, autruches, ânes, chimpanzés,
+                                    chevaux, etc. Grâce aux différentes variétés de la faune aussi sauvage
+                                    qu’emblématique.
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="place('place');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/tshatshi 2.jpg" class="card-img-top"
+                                alt="Les Sculptures du Boulevard Tshatshi" onclick="place('Sculptures');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Les Sculptures du Boulevard Tshatshi</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Sous le haut patronage de l’ancien ministre des ITPR, Thomas Luhaka Losendjola, la
+                                    Fondation Thomas Luhaka et les « ateliers de Kinshasa », ont initié cette expo
+
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="place('Sculptures');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/mains 1.jpg" class="card-img-top" alt="Place mains d’Artistes"
+                                onclick="place('place_mains');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Place Mains d’Artistes</h5>
+                                <p class="card-text text-muted">
+                                    La place de la Victoire (ou rond-point Victoire ou simplement Victoire) est l'un des
+                                    principaux centres mouvementé Kinshasa. Elle est aussi nommée « Place Mains
+                                    d’Artistes »
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="place('place_mains');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/wemba 2.jpg" class="card-img-top" alt="Monument Papa wemba photos"
+                                onclick="place('Wemba');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Monument Papa Wemba</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Le monument de l’artiste musicien Papa Wemba, décédé sur scène le 24 avril 2016 à
+                                    Abidjan, en Côte d’Ivoire, a été dévoilé devant un public composé
+
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="place('Wemba');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/unite 3.jpg" class="card-img-top" alt="Monument de l’Unité Nationale"
+                                onclick="place('unite_national');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Monument de l’Unité Nationale</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Ce monument, qui défie la conscience collective du nationalisme et du patriotisme,
+                                    vaut son pesant d’or.nous pouvons compter sur une RDC
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="place('unite_national');">Voir
+                                    plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/kasavubu 1.jpg" class="card-img-top" alt="Monument de Joseph Kasa-Vubu"
+                                onclick="place('joseph');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Monument de Joseph Kasa-Vubu</h5>
+                                <p class="card-text text-muted text-justify">
+                                    À l'indépendance du pays (30 juin 1960), il est largement élu premier président de
+                                    la
+                                    jeune république du Congo par le premier Parlement congolais face à Bolikango.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('joseph');">
+                                    Voir plus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/lumumba 1.jpg" class="card-img-top"
+                                alt=" Mausolée de Patrice Emery Lumumba" onclick="place('patricy');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Mausolée de Patrice Emery Lumumba</h5>
+                                <p class="card-text text-muted text-justify">
+                                    De son vrai nom Élias Okit'Asombo, P.E Lumumba est Homme d'État congolais,
+                                    premier Premier ministre de la République démocratique du Congo
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('patricy');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/kabila 1.jpg" class="card-img-top" alt="Mausolée de Laurent Désiré Kabila"
+                                onclick="place('Kabila');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Mausolée de Laurent Désiré Kabila</h5>
+                                <p class="card-text text-muted text-justify">
+
+                                    Située juste devant le palais de la nation dans la Commune de la Gombe, cette œuvre
+                                    architecturale de haute facture a été érigée en mémoire du troisième Chef de l’État
+                                    de la RDC
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('kabila');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/etiene 1.jpg" class="card-img-top"
+                                alt=" Mausolée Etienne Tshisekedi Wa Mulumba" onclick="place('etienne');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Mausolée Etienne Tshisekedi Wa Mulumba</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Étienne Tshisekedi wa Mulumba, né à Kananga (alors Luluabourg au Congo belge le
+                                    14 décembre 1932 et mort le 1er février 2017 à Bruxelles), est un homme
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('etienne');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/echangeur 1.jpg" class="card-img-top" alt="Echangeur de limete"
+                                onclick="place('echangeur');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Echangeur de Limété</h5>
+                                <p class="card-text text-muted text-justify">
+
+                                    La Tour de l’Échangeur de Limété, est un édifice fait en béton armé, d’une hauteur
+                                    de 210 mètres, située à Kinshasa dans la commune de Limété.adresse officielle
+                                    est Limété,avenues boulevard Lumumba
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('echangeur');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Images_plan/Stade_des_Martyrs_de_la_Pentecôte.jpg" class="card-img-top" alt="Stade de limete"
+                                onclick="place('martyrs');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Stade des Martyrs de la Pentecôte</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Visiter le temple du sport congolais,
+                                    avec ses deux stadiums de basket et un terrain d'entrainement d'athlétisme
+                                    qui ont accueilli du 28 juillet au 06 août 2023 les 9ème Jeux de la francophonie.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('martyrs');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3" id="stade_de_martyrs">
+                        <div class="card shadow-sm">
+                            <img src="Images/Images_plan/raphael.jpeg" class="card-img-top" alt="20 Mai"
+                                onclick="place('raphael');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Stade Tata Raphaël</h5>
+                                <p class="card-text text-muted text-justify">
+
+                                    Le stade Tata Raphaël autrefois appelé stade du 20 mai (sous le régime du président
+                                    Mobutu) est le deuxième plus grand stade de la République Démocratique du Congo.
+                                    Doté d’une capacité de 50.000 places
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="place('raphael');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <div class="d-none d-md-flex m-92 col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 fin">
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <img src="Images/Bonobo 1.JPG" class="d-block img-fluid cr" alt="Restaurant" />
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="Images/Mona paradis.jpg" class="d-block img-fluid cr" alt="Hotel" />
+                </div>
+                <div class="carousel-item align-items-center text-center">
+                    <img src="Images/Bonobo 2.jpg" class="d-block img-fluid cr" alt="Sites" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-none d-md-flex col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 fin">
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <img src="Images/Hotels/Bella salle.jpg" class="d-block img-fluid cr" alt="Restaurant" />
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="Images/Hotels/pullman inte.jpg" class="d-block img-fluid cr" alt="Hotel" />
+                </div>
+                <div class="carousel-item align-items-center text-center">
+                    <img src="Images/Hotels/Fleuve nuit.jpg" class="d-block img-fluid cr" alt="Sites" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-3">
+        <div class="container text-center py-3">
+            <p>&copy; 2025 YEBAKin. Tous droits réservés.</p>
+        </div>
+    </footer>
+    </div>
+
+
+
+    <script src="./Assets/bootstrap-5.3.3-dist/js/jquery.js"></script>
+    <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./Scripts/Js.js"></script>
+    <script src="./Scripts/typed.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+
+                document.getElementById('loader').style.display = 'none';
+
+                document.getElementById('content').style.display = 'block';
+
+            });
+        });
+
+        var typed = new Typed(".animation", {
+            strings: [
+                "Sont les selections des experts",
+                "sont les meilleurs",
+                "Sont les plus populaires",
+                "ont des meilleurs services",
+            ],
+            typeSpeed: 60,
+            backSpeed: 20,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

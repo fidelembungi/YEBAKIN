@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="aothor" content="CreaTech Groupe & ONT / APKIN" />
+    <meta name="description"
+        content="Visiter et vivez des séjour touristique, amusant et inoubliable de la ville de Kinshasa capitale de RD Congo" />
+    <meta name="keywords" content="ONT, APKIN, YEBAKIN, Tourisme à Kinshasa, RDC Tourisme, CreaTech" />
+    <meta name="creator" content="CreaTech & APKIN" />
+    <link rel="short icon" href="./Images/ont.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurants à Kinshasa</title>
+    <link rel="stylesheet" href="./Assets/FONTAWESOME/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+
+    <style>
+        @import url(Assets/CSS/fidele.css);
+        @import url(Assets/CSS/styles.css);
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-success-subtle" id="loader">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <div>
+                    <h1 class="text-center text-yebakin loader" style="font-size: 2.8em;"> YEBA Kin </h1>
+                </div>
+            </div>
+            <div class="col-12 py-4 text-center">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2">
+                            <!-- Spinner de Bootstrap -->
+                            <div class="spinner p-4 d-flex justify-content-center " role="status">
+                                <i class="">
+
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center text-yebakin" style="font-size: 1.6em;">
+                        Veuillez patienter
+                    </span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center py-2 text-yebakin" style="font-size: 1.1em;">
+                        En cours de chargement...
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content container-fluid m-0" id="content">
+        <div class="container-fluid nav-bg fixed-top entete2">
+            <div class="row d-flex justify-content-between align-items-center px-2">
+                <div class="navbar d-flex text-light text-center col-lg-1 d-none d-lg-flex">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/ONT1.png" alt="Logo" class="img-fluid rounded-circle logo" />
+                        <h4 class="navbar-brand text-light ok-titre ps-3 pointer-none">
+                            YEBA KIN
+                        </h4>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-dark col-md-10 col-lg-11 d-flex justify-content-between">
+                    <div class="align-items-center">
+                        <img src="./Images/ONT1.png" alt="Logo" class="img-fluid d-lg-none rounded-circle logo" />
+                        <a class="navbar-brand d-lg-none lucida-text ok-titre pointer-none">
+                            YEBA KIN
+                        </a>
+                    </div>
+                    <button class="navbar-toggler text-end text-light btn-menu bouton-menu" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-end"> </span>
+                        <span class="lucida-text menu"> Menu </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn border-bottom-light bg-transparent text-light" onclick="Accueil();">
+                                    Accueil
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="Apropos();">
+                                    A propos
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Découvertes
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="themathique();">
+                                            Thématique
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="Edifices_publiques();">
+                                            Edifices publics
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="place_publique();">
+                                            Places publiques
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="infos();">
+                                            Information utiles
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="sites();">
+                                            Sites et Attractions
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="cartos();">
+                                            Cartographie de Kinshasa
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Séjour à Kin
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="shopping();">
+                                            Shopping
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="transports();">
+                                            Transport
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="restaurants();">
+                                            Restaurations
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="hebergements();">
+                                            Hebergements
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="loisir();">
+                                            Sports et Loisirs
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Circuits
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Kin à vélo
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="excursion();">
+                                            Excursion
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Village Touristique
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="Randonnees();">
+                                            Kin et ses environs
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="Randonnees();">
+                                            Randonnées Fluviales
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Kin en 3 Jours et en 7 Jours
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Wewa Tour (Trycicles et motos)
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="Evenements();">
+                                    Evenements
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="boites();">
+                                    Kin By Night
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="services();">
+                                    Services
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="contacts();">
+                                    Contacts
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <header class="text-white rounded-bottom-1">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center p-0">
+                    <div class="w-100 p-0 m-0">
+                        <div id="carousel-hybride"
+                            class="carousel d-flex justify-content-center align-items-center p-0 m-0 mb-4"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active">
+                                    <img src="Images/Manger_kinois/liberté 2.jpg" alt="Carousel-item 1"
+                                        class="w-100 rounded-bottom-4 d-block h-100">
+                                    <div
+                                        class="carousel-caption carousel-cation-center d-block animate__animated animate__fadeInDown">
+                                        <div class="text-center">
+                                            <h1 class="text-center display-3 pb-10">Faire du Shopping à Kin</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <h5 class="h4 ">
+                        Nos recommandations <span class="animation"></span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-4">
+            <div class="row d-flex justify-content-around">
+                <!-- Restaurants -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./Images/ABA (5).jpeg" onclick="resto('cercle');" class="card-img-top"
+                            alt="Cercle Gourmand" />
+                        <div class="card-body">
+                            <h5 class="card-title">Academie des Beaux Art</h5>
+                            <p class="card-text text-muted text-justify">
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./Images/symphonie (5).jpeg" onclick="resto('maman_colonel');"
+                            class="card-img-top" alt="Bella Riva" />
+                        <div class="card-body">
+                            <h5 class="card-title">Symphonie des Arts</h5>
+                            <p class="card-text text-muted text-justify">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./Images/symphonie (5).jpeg" onclick="resto('maman_colonel');"
+                            class="card-img-top" alt="Bella Riva" />
+                        <div class="card-body">
+                            <h5 class="card-title">Galerie de BILEMBO</h5>
+                            <p class="card-text text-muted text-justify">
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="d-none d-sm-flex col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 m-92 fin">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="Images/Restaurants/le-cercle-gourmand.jpg" class="d-block img-fluid cr"
+                            alt="Restaurant" />
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="Images/Restaurants/la perle.jpg" class="d-block img-fluid cr" alt="Hotel" />
+                    </div>
+                    <div class="carousel-item align-items-center text-center">
+                        <img src="Images/Restaurants/hevea-italian-restaurant.jpg" class="d-block img-fluid cr"
+                            alt="Sites" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-sm-flex col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 fin">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="Images/Restaurants/le-cafe-conc.jpg" class="d-block img-fluid cr" alt="Restaurant" />
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="Images/Restaurants/o-poeta.jpg" class="d-block img-fluid cr" alt="Hotel" />
+                    </div>
+                    <div class="carousel-item align-items-center text-center">
+                        <img src="Images/Restaurants/le-mandarin.jpg" class="d-block img-fluid cr" alt="Sites" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white p-3 m-0">
+            <div class="container text-center">
+                <p>&copy; 2025 Hébergements Kinshasa. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./Assets/bootstrap-5.3.3-dist/js/jquery.js"></script>
+    <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./Scripts/Js.js"></script>
+    <script src="./Scripts/typed.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+
+                document.getElementById('loader').style.display = 'none';
+
+                document.getElementById('content').style.display = 'block';
+
+            });
+        });
+
+        var typed = new Typed(".animation", {
+            strings: [
+                "sont les selections des experts",
+                "sont les meilleurs",
+                "sont les plus populaires",
+                "ont des meilleurs services",
+            ],
+            typeSpeed: 60,
+            backSpeed: 20,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

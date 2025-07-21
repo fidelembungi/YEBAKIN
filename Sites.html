@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="aothor" content="CreaTech Groupe & ONT / APKIN" />
+    <meta name="description"
+        content="Visiter et vivez des séjour touristique, 
+    amusant et inoubliable de la ville de Kinshasa capitale de RD Congo; parcs, sites touristiques, jardins, Kinshasa" />
+    <meta name="keywords"
+        content="ONT, APKIN, YEBAKIN, Tourisme à Kinshasa, RDC Tourisme, CreaTech, Jardin, parcs, sites" />
+    <title>Sites touristiques, Jardin et Parcs</title>
+    <meta name="creator" content="CreaTech & APKIN & Fidele mbungi" />
+    <link rel="stylesheet" href="./Assets/FONTAWESOME/css/font-awesome.min.css" />
+    <link rel="short icon" href="./Images/ont.png" />
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+
+    <style>
+        @import url(Assets/CSS/styles.css);
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .cr {
+            width: 100%;
+            height: 90px;
+            object-fit: cover;
+            border-radius: none;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-success-subtle" id="loader">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <div>
+                    <h1 class="text-center text-yebakin loader" style="font-size: 2.8em;"> YEBA Kin </h1>
+                </div>
+            </div>
+            <div class="col-12 py-4 text-center">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2">
+                            <!-- Spinner de Bootstrap -->
+                            <div class="spinner p-4 d-flex justify-content-center " role="status">
+                                <i class="">
+
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center text-yebakin" style="font-size: 1.6em;">
+                        Veuillez patienter
+                    </span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center py-2 text-yebakin" style="font-size: 1.1em;">
+                        En cours de chargement...
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container-fluid nav-bg fixed-top entete2">
+            <div class="row d-flex justify-content-between align-items-center px-2">
+                <div class="navbar d-flex text-light text-center col-lg-1 d-none d-lg-flex">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/ONT1.png" alt="Logo" class="img-fluid rounded-circle logo" />
+                        <h4 class="navbar-brand text-light ok-titre ps-3 pointer-none">
+                            YEBA KIN
+                        </h4>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-dark col-md-10 col-lg-11 d-flex justify-content-between">
+                    <div class="align-items-center">
+                        <img src="./Images/ONT1.png" alt="Logo" class="img-fluid d-lg-none rounded-circle logo" />
+                        <a class="navbar-brand d-lg-none lucida-text ok-titre pointer-none">
+                            YEBA KIN
+                        </a>
+                    </div>
+                    <button class="navbar-toggler text-end text-light btn-menu bouton-menu" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-end"> </span>
+                        <span class="lucida-text menu"> Menu </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn border-bottom-light bg-transparent text-light" onclick="Accueil();">
+                                    Accueil
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="Apropos();">
+                                    A propos
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Découvertes
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="themathique();">
+                                            Thématique
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="Edifices_publiques();">
+                                            Edifices publics
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="place_publique();">
+                                            Places publiques
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="infos();">
+                                            Information utiles
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="sites();">
+                                            Sites et Attractions
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="cartos();">
+                                            Cartographie de Kinshasa
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Séjour à Kin
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="shopping();">
+                                            Shopping
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="transports();">
+                                            Transport
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="restaurants();">
+                                            Restaurations
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="hebergements();">
+                                            Hebergements
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="loisir();">
+                                            Sports et Loisirs
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Circuits
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Kin à vélo
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="excursion();">
+                                            Excursion
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Village Touristique
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="Randonnees();">
+                                            Kin et ses environs
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="Randonnees();">
+                                            Randonnées Fluviales
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Kin en 3 Jours et en 7 Jours
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Wewa Tour (Trycicles et motos)
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="Evenements();">
+                                    Evenements
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="boites();">
+                                    Kin By Night
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="services();">
+                                    Services
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="contacts();">
+                                    Contacts
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main class="pt-5">
+            <header class="bg-sites text-white pt-5 pb-3">
+                <div class="container text-center pt-5">
+                    <h1 class="h2">Kin Découverte</h1>
+                    <p class="lead pb-4">
+                        <marquee behavior="" direction="">
+                            Découvrez les meilleures Sites Touristiques, Parcs et jardins incontestables pour un séjour
+                            inoubliable dans la capitale congolaise.
+                        </marquee>
+                    </p>
+                </div>
+            </header>
+            <div class="container" id="centre">
+                <div class="row mb-4">
+                    <div class="col-12 text-center pt-5">
+                        <h2 class="h4">
+                            Nos recommandations <span class="animation"></span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around align-items-center g-4" id="hotels">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/botanique 4.jpg" class="card-img-top"
+                                alt="Jardins Botanique de Kinshasa photos" onclick="sitess('botanique');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Jardin Botanique de Kinshasa</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Poumon vert au cœur de la ville, il présente un échantillon de la biodiversité
+                                    congolaise, avec une centaine d’essences d’arbres sur sept hectares.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('botanique');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Mona paradis.jpg" class="card-img-top" alt="Mona paradis photos"
+                                onclick="sitess('mona');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Mona paradis</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Il comprend un jardin botanique de 7 000 arbres - dont 18 variétés de manguiers, 50
+                                    palmiers, 6 sapins, des milliers de bambous de divers pays ainsi que des mangoustan.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('mona');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Bonobo 1.JPG" class="card-img-top" alt="Lola ya bonobo photos"
+                                onclick="sitess('lola_bonobo');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Lola ya Bonobo</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Lola ya bonobo, « le paradis des bonobos », est un sanctuaire qui hébèrge les
+                                    bonobos
+                                    appelé aussi chimpanzés mais à face noire, qui est une espèce endémique en RDC.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('lola_bonobo');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/vallée 2.jpg" class="card-img-top" alt="vallée de la n'sele photo"
+                                onclick="sitess('parc');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Parcs de la vallée de la N'sele</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Le Parc de la vallée de la N'Sélé est un joyau écotouristique, une aire protégée
+                                    dédiée
+                                    à̀ la conservation de la faune et de la flore.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('parc');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/kadima's 3.jpg" class="card-img-top" alt="Kadima's Pride of Africa"
+                                onclick="sitess('kadima');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Kadima's Pride of Africa</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Observerez des zèbres, buffles, dromadaires, autruches, ânes, chimpanzés,
+                                    chevaux, etc. Grâce aux différentes variétés de la faune aussi sauvage
+                                    qu’emblématique.
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="sitess('kadima');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Bombo 3.jpg" class="card-img-top" alt="Reserve National de Bombo Lumene"
+                                onclick="sitess('reserve');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Reserve Naturelle de Bombo Lumene</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Les espèces vedettes de sa faune sont les antilopes, buffles, singes et oiseaux
+                                    migrateurs. Il y était possible de
+                                    pratiquer le tourisme cynégétique (chasse sportive) à une certaine époque.
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="sitess('reserve');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Marina 3.jpg" class="card-img-top" alt="La Marina Majestic Nautique"
+                                onclick="sitess('marina');" />
+                            <div class="card-body">
+                                <h5 class="card-title">La Marina Majestic Nautique</h5>
+                                <p class="card-text text-muted">
+                                    Le bar et la restauration sont assurés par le restaurant du Majestic River ancré
+                                    dans le
+                                    même port. Ce même navire peut vous faire découvrir la facette fluviale de Kinshasa
+                                    et ses environs.
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="sitess('marina');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Fleuve 2.jpg" class="card-img-top" alt="Le Majestueux Fleuve Congo"
+                                onclick="sitess('majesteux');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Le Majestueux Fleuve Congo</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Découvrez la beauté des paysages riverains, la fraicheur de l’aire pure lors d’une
+                                    randonnée sur le fleuve Congo ou sur un blanc de sable au bord du grand Fleuve
+                                    Congo.
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="sitess('majesteux');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/pecheurs 3.jpg" class="card-img-top" alt="Cité des pécheurs de Kinkole"
+                                onclick="sitess('cite');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Cité des pécheurs de Kinkole</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Déguster du poisson frais et humer l’air non pollué loin de bruit
+                                    de la ville. La visite du village Lukunga et la baignade en plein fleuve Congo
+                                    après accostage sur un banc de sable.
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="sitess('cite');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Park-aventure 3.png" class="card-img-top" alt="Africa Park Aventure"
+                                onclick="sitess('africa');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Africa Park Aventure</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Passer la journée dans la nature et de manger seul ou en famille. Activités:
+                                    Tyrolienne,
+                                    Treetops Park,
+                                    Empty jump, Play climb, Tir à l'arc, Kayak, Pédalo et bien d'autres encore
+                                    Restaurant/Buffet et Zones de camping...
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="sitess('africa');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/sunset.jpeg" class="card-img-top" alt="Sunset"
+                                onclick="sitess('sunset');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Sunset</h5>
+                                <p class="card-text text-muted text-justify">
+                                    SUNSET organise des activités pour les jeunes et les plus petits. Son beau paysage
+                                    est
+                                    prisé par
+                                    les stars et vedettes de la musique pour le tournage de leurs clips. Visiter en
+                                    famille
+                                    ou en couple.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('Sunset');">
+                                    Voir plus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Le Petit Paradis Chez Lopez 1.jpg" class="card-img-top"
+                                alt=" Le Petit Paradis Chez Lopez" onclick="sitess('petit_paradis');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Le Petit Paradis Chez Lopez</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Merveilleux cadre d’évasion et de loisir qui se
+                                    trouve dans la commune de Maluku, Déguster du poisson frais
+                                    avec de la chikwange, et autres plats,
+                                    paradis des amateurs des rallyes.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('petit_paradis');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/safaribeachkinshasa018.jpg" class="card-img-top" alt="Safari Beach"
+                                onclick="sitess('safari');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Safari Beach</h5>
+                                <p class="card-text text-muted text-justify">
+                                    La marche sportive, ou tout autres activités sportives en plein air... son
+                                    restaurant
+                                    perché sur un balcon propose des menus locaux et étrangères, sous les regards
+                                    lointains des piroguiers et des voyageurs.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('safari');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/kinsuka.jpg" class="card-img-top" alt=" Kinsuka Beach"
+                                onclick="sitess('kinsuka');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Kinsuka Beach</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Amateurs du bel air, amoureux de la plage, Kinsuka beach vous propose de Tenter
+                                    l’expérience et rassure que vous resterez scotchés devant le beau paysage du
+                                    Congo que peut vous offrir une virée.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('kinsuka');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Nganda yalha.jpeg" class="card-img-top" alt=" Nganda Yalha"
+                                onclick="sitess('nganda');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Nganda Yalha</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Nganda Yalha vous donne l'occasion de faire la
+                                    Pêche, les promenade en pirogue sur la rivière, jet-ski, volley, ballade en quad,
+                                    pétanque... Spécialités congolaises et grillades. Pique-nique et barbecue.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('nganda');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/tintin.jpg" class="card-img-top" alt=" Chez Tintin"
+                                onclick="sitess('tintin');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Chez Tintin</h5>
+                                <p class="card-text text-muted text-justify">
+                                    A part son grand jardin où l’on peut observer des sculptures des héros de la bande
+                                    dessinée « tintin », ce site vous offre une vue fabuleuse sur le fleuve Congo, les
+                                    rapides de Kinsuka et l’île Mimosa.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="charger('Kertel');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/ody 5.jpg" class="card-img-top" alt=" Ody’s Sea Park"
+                                onclick="sitess('ody');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Ody’s Sea Park</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Ody’s Sea Park vous propose Différents plats concoctés à base de poissons frais du
+                                    fleuve.
+                                    Principalement le liboke de poisson. Ody’s Sea Park est un lieu d’évènements animé
+                                    par
+                                    un DJ
+                                    autour de la piscine.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('ody');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/congo 4.jpg" class="card-img-top" alt=" Congo River Lodge"
+                                onclick="sitess('congo');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Congo River Lodge</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Congo River Lodge propose plusieurs activités ludiques, la pêche
+                                    sportive et des excursions sur le fleuve à l'aide de canots rapides.
+                                    Les touristes peuvent également jouer sur le fleuve Congo avec des jets-skis
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('congo');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/delikate 12.jpg" class="card-img-top" alt="Delikate"
+                                onclick="sitess('delikate');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Delikate</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Aux tendres amoureux, aux couples en devenir, Delikate est un site touristique
+                                    pouvant vous permettre de rêver et de discuter sous un splendide coucher du soleil.
+                                    Avec l'étonnement de vos papilles.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('delikate');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Amani 8.jpg" class="card-img-top" alt="Amani Kilima"
+                                onclick="sitess('amani');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Amani Kilima</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Faites l’expérience, évadez-vous en amoureux, en famille ou entre amis, un week-end
+                                    chez Amani Kilima, et vous en voudrez encore.
+                                    Comme hébergement, le site vous propose : Bungalow, Dortoir et tente.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('amani');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/concorde 3.jpg" class="card-img-top" alt=" La Concorde"
+                                onclick="sitess('concorde');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> La Concorde</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Chez la Concorde, Chaque weekend, ces sont principalement la jeunesse kinoise qui
+                                    afflue
+                                    dans ce site
+                                    afin de déguster les poissons frais du majestueux fleuve Congo et autres savoureux
+                                    mets.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('concorde');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/IBI 4.jpeg" class="card-img-top" alt="Ibi Village"
+                                onclick="sitess('ibi');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Ibi Village</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Situé au cœur d’un paysage qui est constitué de plus
+                                    de 80% de savanes arbustives.L’on y pratique l’agroforesterie avec notamment la
+                                    culture
+                                    du manioc dans une forêt constituée d’acacias
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('ibi');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/king 16.jpg" class="card-img-top" alt="King’s Beach"
+                                onclick="sitess('king');" />
+                            <div class="card-body">
+                                <h5 class="card-title">King’s Beach</h5>
+                                <p class="card-text text-muted text-justify">
+                                    King's beach expose Sa grande paillotte rustique et son restaurant, et autres
+                                    petites
+                                    huttes faite en
+                                    chaume et en paille, vous offre un accueil chaleureux avant de vous aventurer dans
+                                    son espace agropastorale.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('king');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/cercle 8.jpg" class="card-img-top" alt="Cercle de Kimpoko"
+                                onclick="sitess('cercle');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Cercle de Kimpoko</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Les week-end, ce sont surtout les jeunes filles et
+                                    garçons qui affluent de partout pour s’offrir des détentes et de loisirs. Le
+                                    restaurant du site offre des spécialités. Faites un tour au Cercle Récréatif
+                                    Kimpoko!
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('cercle');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images//Hotels/aqua%201.jpg" class="card-img-top" alt="Aqua Splash"
+                                onclick="sitess('aqua');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Aqua Splash</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Il est le plus grand parc aquatique d’Afrique centrale doté de plusieurs attractions
+                                    à
+                                    vous couper le souffle. Des espaces de détente situés dans les différents bassins
+                                    sont aménagés pour le plaisir des visiteurs.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('aqua');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/fikin 1.png" class="card-img-top" alt="Foire Internationale de Kinshasa"
+                                onclick="sitess('Foire');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Foire Internationale de Kinshasa</h5>
+                                <p class="card-text text-muted text-justify">
+                                    La Foire internationale de Kinshasa (FIKIN), est un établissement public ayant pour
+                                    objet, entre autres, l’organisation des foires provinciales, nationales et
+                                    internationales.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('Foire');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/park kin 1.jpg" class="card-img-top" alt="Park Ya Kinshasa"
+                                onclick="sitess('park');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Park Ya Kinshasa</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Il est un lieu assez prisé par le grand public (familles,
+                                    écoles, association,... ) surtout les weekends à cause de ses différents
+                                    manèges. Ce site récréatif est particulièrement réservé aux enfants de tous âges.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('park');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/bomongo 3.jpg" class="card-img-top" alt="Bomongo Village"
+                                onclick="sitess('bomongo');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Bomongo Village</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Faites-en l’expérience, traversez le site d’un bout à l’autre à travers des allées
+                                    qui
+                                    sont des véritables pirogues. Réputé pour sa cuisine faite à base des divers
+                                    poissons
+                                    frais du fleuve
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('bomongo');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/sabliere 1.jpg" class="card-img-top" alt="La Sablière"
+                                onclick="sitess('sabliere');" />
+                            <div class="card-body">
+                                <h5 class="card-title">La Sablière</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Loin des embouteillages et de la pollution du centre-ville, offrez-vous des moments
+                                    de repos mêmes avant de prendre votre vol, car la sablière se trouve qu’à 30
+                                    minutes au-delà de l’aéroport de N’djili.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('sabliere');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/enka 5.jpg" class="card-img-top" alt="Enka Beach"
+                                onclick="sitess('enka');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Enka Beach</h5>
+                                <p class="card-text text-muted text-justify">
+                                    ENKA BEACH un espace naturel de 19 hectares mis à la disposition des touristes. Le
+                                    site
+                                    vous propose comme divertissement : Plage, rivière, forêts, avec
+                                    Un étang rempli de différentes espèces de poissons.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('enka');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Mbudi6.jpg" class="card-img-top" alt="Mbudi Nature"
+                                onclick="sitess('mbudi');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Mbudi Nature</h5>
+                                <p class="card-text text-muted text-justify">
+                                    La marche à pied sur ses petites plages et les grosses pierres sorties
+                                    du fleuve constitue des moments inoubliables. Goutez au poisson frais du fleuve et
+                                    vous
+                                    nous en direz quelque chose.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('mbudi');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/kimia 9.jpg" class="card-img-top" alt="Kimia Rivière"
+                                onclick="sitess('kimie');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Kimia Rivière</h5>
+                                <p class="card-text text-muted text-justify">
+                                    N’oubliez pas de gouter au poisson frais braisé, l’une des spécialités des lieux.
+                                    Lees entreprises réservent le site pour organiser des teams
+                                    building et autres activités entre collègues de services.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('kimie');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/conseiller1 (15).jpg" class="card-img-top" alt="Chez le Conseiller"
+                                onclick="sitess('conseiller');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Chez le Conseiller</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Son confort et hospitalité vous emportent loin des agitations du centre de la
+                                    capitale.
+                                    Dans ce beau cadre, c’est la nature environnante et le puissant fleuve Congo qui
+                                    vous
+                                    enivre tel dans un conte de fée
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('conseiller');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/picasso (7).jpg" class="card-img-top" alt="Picasso Beach"
+                                onclick="sitess('picasso');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Picasso Beach</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Il a plus d’un tour dans sa poche pour assurer le plaisir
+                                    des excursionnistes : jet-sky, beach- volley, pédalo, basket-ball, ...voici autant
+                                    d’activités qui n’ont qu’une seule fonction, celle de vous empecher de vous ennuyer
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('picasso');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/cercle de kinshasa (6).jpg" class="card-img-top"
+                                alt="Stade des Martyrs de la Pentecôte" onclick="sitess('cercle_kinshasa');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Cercle de Kinshasa</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Un endroit de rêves qui permet aux touristes, de s’immerger dans une atmosphère de
+                                    détente,
+                                    de liberté et de divertissement. Vous pouvez vous restaurer sur place sur deux sites
+                                    différents.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('cercle_kinshasa');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/cercle amicale (3).jpg" class="card-img-top" alt="Amicale Sportive Kinoise"
+                                onclick="sitess('amicale');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Amicale Sportive Kinoise</h5>
+                                <p class="card-text text-muted text-justify">
+                                    L’amicale vous propose diverses activités au choix : 1 Piscine semi-Olympique ; 2
+                                    courts de tennis en terre battue ; 1 terrain de basket ;
+                                    1 terrain de pétanque ; 1 terrain de foot ; etc.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('amicale');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/france1 (3).jpg" class="card-img-top" alt="La Maison de France"
+                                onclick="sitess('france');" />
+                            <div class="card-body">
+                                <h5 class="card-title">La Maison de France</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Chaque dimanche midi sous la paillote au bord de la piscine adonnez-vous à un
+                                    chouette barbecue. C’est l’une des excellentes adresses de Kinshasa vous offrant de
+                                    la petite restauration.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('france');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/nautic (5).jpg" class="card-img-top" alt="Nautic Club Kinshasa"
+                                onclick="sitess('nautic');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Nautic Club Kinshasa</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Le Nautic Club Kinshasa ouvre ses portes toutes la semaine, du lundi au dimanche de
+                                    09 heures à 22 heures. N’hésitez surtout pas à vous offrir du bon temps, à vous
+                                    relâcher en plein milieu du majestueux fleuve Congo.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('nautic');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="./Images/le-cercle-gourmand (1).jpg" class="card-img-top"
+                                alt="Nautic Club Kinshasa" onclick="sitess('hippique');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Cercle Hippique de Kinshasa</h5>
+                                <p class="card-text text-muted text-justify">
+                                    le cercle dut, après quelques mois seulement, songer à quitter ses premières
+                                    installations. Ce fut l’occasion pour les dirigeants d’alors de penser plus grand et
+                                    de
+                                    voir plus loin. .
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="sitess('hippique');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 p-2" id="mangengenge">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/mangengenge 1.jpg" class="card-img-top" alt="Mont Mangengenge"
+                                onclick="edifices('Mangenge');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Mont Mangengenge</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Le mont Mangengenge est une montagne située, au sud-est de Kinshasa. Il fait partie
+                                    des monts de Cristal et culmine à 718 mètres d'altitude. Il est visible de très loin
+                                    grâce
+                                    aux importants aplombs de couleur blanche à proximité de son sommet.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('Mangenge');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="d-none d-sm-flex m-92 col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 fin">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="Images/Bonobo 1.JPG" class="d-block img-fluid cr" alt="Restaurant" />
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="Images/Mona paradis.jpg" class="d-block img-fluid cr" alt="Hotel" />
+                    </div>
+                    <div class="carousel-item align-items-center text-center">
+                        <img src="Images/Bonobo 2.jpg" class="d-block img-fluid cr" alt="Sites" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-sm-flex col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 fin">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="Images/Hotels/Bella salle.jpg" class="d-block img-fluid cr" alt="Restaurant" />
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="Images/Hotels/pullman inte.jpg" class="d-block img-fluid cr" alt="Hotel" />
+                    </div>
+                    <div class="carousel-item align-items-center text-center">
+                        <img src="Images/Hotels/Fleuve nuit.jpg" class="d-block img-fluid cr" alt="Sites" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white py-4 mt-3">
+            <div class="container text-center py-3">
+                <p>&copy; 2025 YEBAKin. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./Assets/bootstrap-5.3.3-dist/js/jquery.js"></script>
+    <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./Scripts/Js.js"></script>
+    <script src="./Scripts/typed.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+
+                document.getElementById('loader').style.display = 'none';
+
+                document.getElementById('content').style.display = 'block';
+
+            });
+        });
+
+
+        var typed = new Typed(".animation", {
+            strings: [
+                "Sont les selections des experts",
+                "sont les meilleurs",
+                "Sont les plus populaires",
+                "ont des meilleurs services",
+            ],
+            typeSpeed: 60,
+            backSpeed: 20,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

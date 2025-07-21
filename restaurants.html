@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="aothor" content="CreaTech Groupe & ONT / APKIN" />
+  <meta name="description"
+    content="Visiter et vivez des séjour touristique, amusant et inoubliable de la ville de Kinshasa capitale de RD Congo" />
+  <meta name="keywords" content="ONT, APKIN, YEBAKIN, Tourisme à Kinshasa, RDC Tourisme, CreaTech" />
+  <meta name="creator" content="CreaTech & APKIN" />
+  <link rel="short icon" href="./Images/ont.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurants à Kinshasa</title>
+  <link rel="stylesheet" href="./Assets/FONTAWESOME/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+
+  <style>
+    @import url(Assets/CSS/fidele.css);
+    @import url(Assets/CSS/styles.css);
+
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-success-subtle" id="loader">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 text-center">
+        <div>
+          <h1 class="text-center text-yebakin loader" style="font-size: 2.8em;"> YEBA Kin </h1>
+        </div>
+      </div>
+      <div class="col-12 py-4 text-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-2">
+              <!-- Spinner de Bootstrap -->
+              <div class="spinner p-4 d-flex justify-content-center " role="status">
+                <i class="">
+
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <div class="d-flex justify-content-center">
+          <span class="visually lucida text-center text-yebakin" style="font-size: 1.6em;">
+            Veuillez patienter
+          </span>
+        </div>
+        <div class="d-flex justify-content-center">
+          <span class="visually lucida text-center py-2 text-yebakin" style="font-size: 1.1em;">
+            En cours de chargement...
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content container-fluid m-0" id="content">
+    <div class="container-fluid nav-bg fixed-top entete2">
+      <div class="row d-flex justify-content-between align-items-center px-2">
+        <div class="navbar d-flex text-light text-center col-lg-1 d-none d-lg-flex">
+          <div class="d-flex align-items-center">
+            <img src="./Images/ONT1.png" alt="Logo" class="img-fluid rounded-circle logo" />
+            <h4 class="navbar-brand text-light ok-titre ps-3 pointer-none">
+              YEBA KIN
+            </h4>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark col-md-10 col-lg-11 d-flex justify-content-between">
+          <div class="align-items-center">
+            <img src="./Images/ONT1.png" alt="Logo" class="img-fluid d-lg-none rounded-circle logo" />
+            <a class="navbar-brand d-lg-none lucida-text ok-titre pointer-none">
+              YEBA KIN
+            </a>
+          </div>
+          <button class="navbar-toggler text-end text-light btn-menu bouton-menu" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-end"> </span>
+            <span class="lucida-text menu"> Menu </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <button class="btn border-bottom-light bg-transparent text-light" onclick="Accueil();">
+                  Accueil
+                </button>
+              </li>
+              <li class="nav-item dropdown">
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="Apropos();">
+                  A propos
+                </button>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Découvertes
+                </button>
+                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="themathique();">
+                      Thématique
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="Edifices_publiques();">
+                      Edifices publics
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="place_publique();">
+                      Places publiques
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="infos();">
+                      Information utiles
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="sites();">
+                      Sites et Attractions
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="cartos();">
+                      Cartographie de Kinshasa
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Séjour à Kin
+                </button>
+                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="shopping();">
+                      Shopping
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="transports();">
+                      Transport
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="restaurants();">
+                      Restaurations
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="hebergements();">
+                      Hebergements
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="loisir();">
+                      Sports et Loisirs
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Circuits
+                </button>
+                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                      Kin à vélo
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="excursion();">
+                      Excursion
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                      Village Touristique
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="Randonnees();">
+                      Kin et ses environs
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="Randonnees();">
+                      Randonnées Fluviales
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                      Kin en 3 Jours et en 7 Jours
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                      Wewa Tour (Trycicles et motos)
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="Evenements();">
+                  Evenements
+                </button>
+              </li>
+              <li>
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="boites();">
+                  Kin By Night
+                </button>
+              </li>
+              <li>
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="services();">
+                  Services
+                </button>
+              </li>
+              <li>
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="contacts();">
+                  Contacts
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <header class="bg-res text-white py-5 rounded-bottom-1">
+      <div class="container text-center pt-5">
+        <h1 class="h2 pt-5">Les Restaurants à Kin</h1>
+        <p class="lead pb-3">
+          <marquee behavior="" direction="">
+            Découvrez les meilleures options des restaurants pendant votre
+            séjour inoubliable dans la capitale congolaise.
+          </marquee>
+        </p>
+
+      </div>
+    </header>
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-12 text-center">
+          <h5 class="h4 pt-4">
+            Nos recommandations <span class="animation"></span>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="container pb-4">
+      <div class="row g-4">
+        <!-- Restaurants -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/le-cercle-gourmand.jpg" onclick="resto('cercle');" class="card-img-top"
+              alt="Cercle Gourmand" />
+            <div class="card-body">
+              <h5 class="card-title">Le Cercle Gourmand</h5>
+              <p class="card-text text-muted text-justify">
+                Un cadre moderne et élégant, luxueux à la Française et
+                international
+              </p>
+              <a class="btn btn-primary w-100" onclick="resto('cercle');">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/colonel1.jpg" onclick="resto('maman_colonel');" class="card-img-top"
+              alt="Bella Riva" />
+            <div class="card-body">
+              <h5 class="card-title">Chez maman colonel</h5>
+              <p class="card-text text-muted text-justify">
+                Un Restaurant charmant, Africaine, barbecue/grillades <br />
+                Innovant
+              </p>
+              <a class="btn btn-primary w-100" onclick="resto('maman_colonel');">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/le-mandarin.jpg" onclick="resto('mandarin');" class="card-img-top"
+              alt="Hilton" />
+            <div class="card-body">
+              <h5 class="card-title">Le Mandarin</h5>
+              <p class="card-text text-muted text-justify">
+                Un restaurant de haut niveau avec la bonne cuisine Africaine,
+                asiatique et chinoise
+              </p>
+              <a class="btn btn-primary w-100" onclick="resto('mandarin');">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/le-cafe-conc.jpg" onclick="resto('cafe');" class="card-img-top" alt="Ixoras" />
+            <div class="card-body">
+              <h5 class="card-title">Le Café Conc</h5>
+              <p class="card-text text-muted text-justify">
+                Un mélange de confort, de style et de services personnalisés,
+                jouissant à vos préférable
+              </p>
+              <a onclick="resto('cafe');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <!-- Ajouter les autres hôtels ici -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/hevea-italian-restaurant.jpg" class="card-img-top" alt="Memling"
+              onclick="resto('italian');" />
+            <div class="card-body">
+              <h5 class="card-title">HEVEA RESTAURANT ITALIEN</h5>
+              <p class="card-text text-muted text-justify">
+                Un restaurant italien incontournable.
+              </p>
+              <a onclick="resto('italian');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/le-balcon.jpg" onclick="resto('balcon');" class="card-img-top" alt="Pullman" />
+            <div class="card-body">
+              <h5 class="card-title">Le balcon</h5>
+              <p class="card-text text-muted text-justify">
+                Un restaurant animés dans un cadre luxueux, un visage
+                authentique de <b>Kin la belle</b>.
+              </p>
+              <a onclick="resto('balcon');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/maison-des-mezzes.jpg" class="card-img-top" alt="Kin Plazza"
+              onclick="resto('mezzes');" />
+            <div class="card-body">
+              <h5 class="card-title">Maison Des Mezzes</h5>
+              <p class="card-text text-muted text-justify">
+                Excellent restaurant Grec, Restaurant rapide et international.
+              </p>
+              <a onclick="resto('mezzes');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/la perle.jpg" onclick="resto('perle');" class="card-img-top" alt="Royal" />
+            <div class="card-body">
+              <h5 class="card-title">Restaurant La Perle</h5>
+              <p class="card-text text-muted text-justify">
+                Un restaurant asiatique et chinois charmant et luxueux à votre
+                service.
+              </p>
+              <a onclick="resto('perle');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/pates-en-folie-ouvre.jpg" onclick="resto('pates');" class="card-img-top"
+              alt="Stella Sultani" />
+            <div class="card-body">
+              <h5 class="card-title">Pâtes en Folie</h5>
+              <p class="card-text text-muted text-justify">
+                Restaurant Pâtes en Folie, Une expérience qui vous pousse à
+                revenir.
+              </p>
+              <a onclick="resto('pates');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/o-poeta.jpg" onclick="resto('poeta');" class="card-img-top"
+              alt="Stella Sultani" />
+            <div class="card-body">
+              <h5 class="card-title">O Poeta</h5>
+              <p class="card-text text-muted text-justify">
+                O Poeta, Restraurant italien, favori pour manger des pizzas
+                dans un lieu paisible.
+              </p>
+              <a onclick="resto('poeta');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/chez-flore.jpg" onclick="resto('flore');" class="card-img-top"
+              alt="chez flore" />
+            <div class="card-body">
+              <h5 class="card-title">Chez Flore</h5>
+              <p class="card-text text-muted text-justify">
+                Exellent restaurant congolais <br />
+                Restaurant aux mets congolais naturels.
+              </p>
+              <a onclick="resto('flore');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="Images/Restaurants/resto-de-vent.jpg" onclick="resto('vins');" class="card-img-top"
+              alt="Stella Sultani" />
+            <div class="card-body">
+              <h5 class="card-title">Restaurant d'Vins</h5>
+              <p class="card-text text-muted text-justify">
+                Restaurant française et méditeranéenne, Belle expérience
+                kinoise.
+              </p>
+              <a onclick="resto('vins');" class="btn btn-primary w-100">Voir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-secondary bg-opacity-10">
+      <div class="row pt-4 pb-3">
+        <div class="col-12 text-center">
+          <h2 class="text-center text-yebakin">
+            Les Repas en Zones ouverts
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border-bottom border-2 border-secondary row m-0 p-0 d-flex justify-content-around">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 p-2">
+            <img src="./Images/Manger_kinois/ngulu.jpg" alt="Ngulu ya kapela" class="img-fluid">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 p-2">
+            <h4 class="h3 text-center text-yebakin "> Ngulu ya Kapela </h4>
+            <p class="lead text-justify">
+              Ngulu ya kapela est un plat determinant de la cuisine Kinoise souvent roti ou grillé
+              parfois bouconné ce qui lui donne un goût fumé très caractéristique préparer à la Kinoise,
+              riches en épices locales ce qui rechausse sa saveur et le rend irresistible. Il est souvent
+              partagé autour d'une bière et symbolise la convivialité, la detente entre amis et les bons
+              moments dans les Rues Kinoise.
+
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border-bottom border-2 border-secondary row m-0 p-0 d-flex justify-content-around align-items-center">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 p-2">
+            <img src="./Images/Manger_kinois/tige 2.jpg" alt="Tige ya Lemba" class="img-fluid">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 p-2">
+            <h4 class="h3 text-center text-yebakin "> Tige ya Lemba </h4>
+            <p class="lead text-justify">
+              C'est le rendez-vous du vrai mangé Kinois, goût athentique, ambiance locale et portions
+              généreuses, viandres tendres, un peu croustillante, petit budget gros plaisirs, dépenser
+              et vivez une expérience gestative de haut niveau.
+
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border-bottom border-2 border-secondary row m-0 p-0 d-flex justify-content-around align-items-center">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 p-2">
+            <img src="./Images/Manger_kinois/liboke 2.jpg" alt="Liboke ya Kinkole et MALUKU" class="img-fluid">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 p-2">
+            <h4 class="h3 text-center text-yebakin"> Liboke ya Kinkole et MALUKU </h4>
+            <p class="lead text-justify">
+              Liboke ya Kinkole et MALUKU n'est pas juste un plat, c'est une déclaration
+              d'amour aux poissons du grand fleuve ;
+              Bien mariné, bien enveloppé dans les feuilles des bananiers cuit à la braise...
+              Le goût est profond, un peu fumé et irresistible. Un plat préféré par plusieurs touristes.
+
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border-bottom border-2 border-secondary row m-0 p-0 d-flex justify-content-around align-items-center">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 p-2">
+            <img src="./Images/Manger_kinois/NGOLO.jpg" alt="Poissons frais de NYANGWE" class="img-fluid">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 p-2">
+            <h4 class="h3 text-center text-yebakin"> Poisson fumée NYANGWE </h4>
+            <p class="lead text-justify">
+              Les poissons fumées de NYANGWE sont la fraicheur garantie direct du grand majestueux fleuve
+              Congo sans retour. Avec un goût doux et tendre, naturel. pas besoin de surcharger d'épices
+              juste grillé d'une façon simple avec le feu.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border-bottom border-2 border-secondary row m-0 p-0 d-flex justify-content-around align-items-center">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 p-2">
+            <img src="./Images/Manger_kinois/poulet mayo.jpg" alt="Poulet Mayo de Beau Marché" class="img-fluid">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 p-2">
+            <h4 class="h3 text-center text-yebakin "> Poulet Mayo de Beau Marché </h4>
+            <p class="lead text-justify">
+              Le Poulet Mayo de Beau Marché qui est considéré comme
+              Une classique du mangé kinois qui fait saliver que rien qu'en y pensant, le piment est là,
+              la sauce présente et un goût appetissant et irresistible qui frappe sans effort ni prevenir.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border-bottom border-2 border-secondary row m-0 p-0 d-flex justify-content-around align-items-center">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 p-2">
+            <img src="./Images/Manger_kinois/ntabe 2.jpg" alt="Ntaba ya Kimbuta" class="img-fluid">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 p-2">
+            <h4 class="h3 text-center text-yebakin "> Ntaba ya Kimbuta </h4>
+            <p class="lead text-justify">
+              Avec Ntaba ya Kimbuta on est dans le haut niveau du grillé <strong style="font-weight: bold;"> "Made
+                in
+                Kin" </strong>
+              , c'est la viande qui parle lingala. Bien braisé, bien assaisonnée, toujours
+              prêt à vous accueillir avec un goût fumé d'une très bonne qualité.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border-bottom border-2 border-secondary row m-0 p-0 d-flex justify-content-around align-items-center">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 p-2">
+            <img src="./Images/Manger_kinois/ntabe 2.jpg" alt="Ntaba ya Kimbuta" class="img-fluid">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 p-2">
+            <h4 class="h3 text-center text-yebakin "> Mbisi ya SHABA </h4>
+            <p class="lead text-justify">
+              Avec Ntaba ya Kimbuta on est dans le haut niveau du grillé <strong style="font-weight: bold;"> "Made
+                in
+                Kin" </strong>
+              , c'est la viande qui parle lingala. Bien braisé, bien assaisonnée, toujours
+              prêt à vous accueillir avec un goût fumé d'une très bonne qualité.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-sm-flex col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 m-92 fin">
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img src="Images/Restaurants/le-cercle-gourmand.jpg" class="d-block img-fluid cr" alt="Restaurant" />
+          </div>
+          <div class="carousel-item text-center">
+            <img src="Images/Restaurants/la perle.jpg" class="d-block img-fluid cr" alt="Hotel" />
+          </div>
+          <div class="carousel-item align-items-center text-center">
+            <img src="Images/Restaurants/hevea-italian-restaurant.jpg" class="d-block img-fluid cr" alt="Sites" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-sm-flex col-xs-12 col-sm-2 col-md-2 col-lg-1 fixed-bottom text-end p-2 fin">
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img src="Images/Restaurants/le-cafe-conc.jpg" class="d-block img-fluid cr" alt="Restaurant" />
+          </div>
+          <div class="carousel-item text-center">
+            <img src="Images/Restaurants/o-poeta.jpg" class="d-block img-fluid cr" alt="Hotel" />
+          </div>
+          <div class="carousel-item align-items-center text-center">
+            <img src="Images/Restaurants/le-mandarin.jpg" class="d-block img-fluid cr" alt="Sites" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white p-3 m-0">
+      <div class="container text-center">
+        <p>&copy; 2025 Hébergements Kinshasa. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="./Assets/bootstrap-5.3.3-dist/js/jquery.js"></script>
+  <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+  <script src="./Scripts/Js.js"></script>
+  <script src="./Scripts/typed.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(() => {
+
+        document.getElementById('loader').style.display = 'none';
+
+        document.getElementById('content').style.display = 'block';
+
+      });
+    });
+
+    var typed = new Typed(".animation", {
+      strings: [
+        "sont les selections des experts",
+        "sont les meilleurs",
+        "sont les plus populaires",
+        "ont des meilleurs services",
+      ],
+      typeSpeed: 60,
+      backSpeed: 20,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>

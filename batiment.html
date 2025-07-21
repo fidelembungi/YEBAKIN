@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="aothor" content="CreaTech Groupe & ONT / APKIN" />
+    <meta name="description"
+        content="Visiter et vivez des séjour touristique, 
+      amusant et inoubliable de la ville de Kinshasa capitale de RD Congo; parcs, sites touristiques, jardins, Kinshasa" />
+    <meta name="keywords"
+        content="ONT, APKIN, YEBAKIN, Tourisme à Kinshasa, RDC Tourisme, CreaTech, édifices, batiments publics , edifices publiques " />
+    <title>Edifices Publics</title>
+    <meta name="creator" content="CreaTech & APKIN & Fidele mbungi" />
+    <link rel="stylesheet" href="./Assets/FONTAWESOME/css/font-awesome.min.css" />
+    <link rel="short icon" href="./Images/ont.png" />
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+
+    <style>
+        @import url(Assets/CSS/styles.css);
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .cr {
+            width: 100%;
+            height: 90px;
+            object-fit: cover;
+            border-radius: none;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="bg-success-subtle" id="loader">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <div>
+                    <h1 class="text-center text-yebakin loader" style="font-size: 2.8em;"> YEBA Kin </h1>
+                </div>
+            </div>
+            <div class="col-12 py-4 text-center">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2">
+                            <!-- Spinner de Bootstrap -->
+                            <div class="spinner p-4 d-flex justify-content-center " role="status">
+                                <i class="">
+
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center text-yebakin" style="font-size: 1.6em;">
+                        Veuillez patienter
+                    </span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center py-2 text-yebakin" style="font-size: 1.1em;">
+                        En cours de chargement...
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container-fluid nav-bg fixed-top entete2">
+            <div class="row d-flex justify-content-between align-items-center px-2">
+                <div class="navbar d-flex text-light text-center col-lg-1 d-none d-lg-flex">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/ONT1.png" alt="Logo" class="img-fluid rounded-circle logo" />
+                        <h4 class="navbar-brand text-light ok-titre ps-3 pointer-none">
+                            YEBA KIN
+                        </h4>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-dark col-md-10 col-lg-11 d-flex justify-content-between">
+                    <div class="align-items-center">
+                        <img src="./Images/ONT1.png" alt="Logo" class="img-fluid d-lg-none rounded-circle logo" />
+                        <a class="navbar-brand d-lg-none lucida-text ok-titre pointer-none">
+                            YEBA KIN
+                        </a>
+                    </div>
+                    <button class="navbar-toggler text-end text-light btn-menu bouton-menu" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-end"> </span>
+                        <span class="lucida-text menu"> Menu </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn border-bottom-light bg-transparent text-light" onclick="Accueil();">
+                                    Accueil
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="Apropos();">
+                                    A propos
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Découvertes
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="themathique();">
+                                            Thématique
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="Edifices_publiques();">
+                                            Edifices publics
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="place_publique();">
+                                            Places publiques
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="infos();">
+                                            Information utiles
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="sites();">
+                                            Sites et Attractions
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="cartos();">
+                                            Cartographie de Kinshasa
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Séjour à Kin
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="shopping();">
+                                            Shopping
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="transports();">
+                                            Transport
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="restaurants();">
+                                            Restaurations
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="hebergements();">
+                                            Hebergements
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu btn bg-transparent text-light"
+                                            onclick="loisir();">
+                                            Sports et Loisirs
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle btn bg-transparent text-light" type="button"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Circuits
+                                </button>
+                                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Kin à vélo
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="excursion();">
+                                            Excursion
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Village Touristique
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="Randonnees();">
+                                            Kin et ses environs
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                                            onclick="Randonnees();">
+                                            Randonnées Fluviales
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Kin en 3 Jours et en 7 Jours
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                                            Wewa Tour (Trycicles et motos)
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="Evenements();">
+                                    Evenements
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="boites();">
+                                    Kin By Night
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="services();">
+                                    Services
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                                    onclick="contacts();">
+                                    Contacts
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main class="">
+            <header class="text-white pb-3">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center p-0">
+                        <div class="w-100 p-0 m-0">
+                            <div id="carousel-hybride"
+                                class="carousel d-flex justify-content-center align-items-center p-0 m-0 mb-4"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner ">
+                                    <div class="carousel-item active">
+                                        <img src="Images/Edifices/peuple 1.jpg" alt="Carousel-item 1"
+                                            class="w-100 rounded-bottom-4 d-block h-100">
+                                        <div
+                                            class="carousel-caption carousel-cation-center d-block animate__animated animate__fadeInDown">
+                                            <div class="text-center">
+                                                <h1 class="text-center display-3 pb-10">Les Batiments</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container" id="centre">
+                <!-- Titre de la section -->
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold">
+                            Nos recommandations <span class="animation"></span>
+                        </h2>
+                    </div>
+                </div>
+                <!-- Liste des sites touristiques; jardins et parcs -->
+                <div class="row d-flex justify-content-around align-items-center g-4" id="hotels">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/sozacom 1.jpg" class="card-img-top" alt="Immeuble SOZACOM"
+                                onclick="edifices('sozacom');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Immeuble SOZACOM</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Commandé par le Président Mobutu,
+                                    les travaux de construction ont été lancés en 1969 par les ateliers d'architecture
+                                    de
+                                    Genval en collaboration avec Claude Strebelle et André Jacqmain, auteurs du projet.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('sozacom');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/onatra 1.jpg" class="card-img-top" alt="Immeuble de l’ONATRA"
+                                onclick="edifices('onatra');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Immeuble ONATRA</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Elle est renommée Office des
+                                    transports au Congo (OTRACO) avec l'indépendance en 1960. Celle-ci est dissoute et
+                                    remplacé par l'Office national des transports en 1971.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('onatra');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/poste 1.jpg" class="card-img-top"
+                                alt="Société Congolaise des Postes & Télécommunications"
+                                onclick="edifices('telecom');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Société Congolaise des Postes & Télécommunications </h5>
+                                <p class="card-text text-muted text-justify">
+                                    La poste en RDC a vu le jour le 1er janvier 1885 avec l’émission du premier
+                                    timbreposte
+                                    du Congo, alors Etat indépendant du Congo (EIC).
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('telecom');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/justice 1.jpg" class="card-img-top" alt=" Palais de Justice"
+                                onclick="edifices('justice');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Palais de la Justice</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Ce chef-d’œuvre de l'architecture coloniale est le fruit du travail de deux
+                                    architectes
+                                    très sollicités dans les années 50 : Gernay et Simon. Situé en face du Centre
+                                    Financier
+                                    de Kinshasa. Il a été construit par les Belges de 1953 à 1957.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('justice');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/rtnc 2.jpg" class="card-img-top"
+                                alt="Radio Télévision Nationale Congolaise" onclick="edifices('RTNC');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Radio Télévision Nationale Congolaise</h5>
+                                <p class="card-text text-muted text-justify">
+                                    La Radio-Télévision nationale congolaise (RTNC) est l'entreprise publique de radio
+                                    et
+                                    télévision en RDC. Son siège social, un bâtiment de 22 étages est situé dans la
+                                    commune de Lingwala. Au départ appelée Radio Congo Belge (RCB).
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('RTNC');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/port 1.jpg" class="card-img-top"
+                                alt="Département du Port de Kinshasa ONATRA" onclick="edifices('port_onatra');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Département du Port de Kinshasa ONATRA</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Cet édifice abrite les bureaux du département du Port de l’ONATRA
+                                    offre une vue imprenable sur le fleuve Congo et à perte de vue Brazzaville.
+                                    La structure préfabriquée de 4 étages en fonte influencée par
+                                    l’Art nouveau.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('port_onatra');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/nation 1.jpg" class="card-img-top" alt="Palais de la Nation"
+                                onclick="edifices('nation');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Palais de la Nation</h5>
+                                <p class="card-text text-muted text-justify">
+                                    La construction du bâtiment plus classique, incorporant une façade à arcades et une
+                                    coupole centrale, a commencé en 1956 et a été convertie pour servir de premier
+                                    bâtiment du Parlement congolais à l’indépendance en 1960.
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="edifices('nation');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/peuple 1.jpg" class="card-img-top" alt=" Palais du Peuple"
+                                onclick="edifices('peuple');" />
+                            <div class="card-body">
+                                <h5 class="card-title"> Palais du Peuple</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Construit à Kinshasa dans la Commune de Lingwala, au voisinage du Stade des
+                                    martyrs, le palais du Peuple est le siège du Parlement de la République démocratique
+                                    du Congo composé de l'Assemblée nationale et du Sénat.
+                                </p>
+                                <a href="#" class="btn btn-primary w-100" onclick="edifices('peuple');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/hotel 1.jpg" class="card-img-top" alt="Hôtel du Gouvernement"
+                                onclick="edifices('h_gouv');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Hôtel du Gouvernement</h5>
+                                <p class="card-text text-muted text-justify">
+                                    Cet immeuble dit « intelligent » à cause des normes internationales respectées lors
+                                    de sa construction, notamment la sécurité incendie, climatisation
+                                    centrale, réseau intranet, et autres.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('h_gouv');">
+                                    Voir plus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/bcc 1.jpg" class="card-img-top" alt="Banque Centrale du Congo"
+                                onclick="edifices('BCC');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Banque Centrale du Congo</h5>
+                                <p class="card-text text-muted text-justify">
+                                    L’histoire de la banque Centrale du Congo ainsi que celle de la monnaie nationale
+                                    ont
+                                    toujours été liées aux grands événements ayant marqué l’histoire politique,
+                                    économique et sociale de la République Démocratique du Congo.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('BCC');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card shadow-sm">
+                            <img src="Images/Edifices/nioki 2.jpg" class="card-img-top"
+                                alt="Building Nioki ex. FORESCOM" onclick="edifices('nioki');" />
+                            <div class="card-body">
+                                <h5 class="card-title">Building Nioki ex. FORESCOM</h5>
+                                <p class="card-text text-muted text-justify">
+                                    L’immeuble du Building Nioki commandé par la société Forescom (Société forestière et
+                                    commerciale
+                                    du Congo) a été conçu par l’architecte R. Fostier.
+                                    Sa construction a débuté en 1945 et est devenue opérationnelle en 1946.
+                                </p>
+                                <a class="btn btn-primary w-100" onclick="edifices('nioki');">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-white py-4 mt-3">
+            <div class="container text-center py-3">
+                <p>&copy; 2025 YEBAKin. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="./Assets/bootstrap-5.3.3-dist/js/jquery.js"></script>
+    <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./Scripts/Js.js"></script>
+    <script src="./Scripts/typed.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+
+                document.getElementById('loader').style.display = 'none';
+
+                document.getElementById('content').style.display = 'block';
+
+            });
+        });
+
+        var typed = new Typed(".animation", {
+            strings: [
+                "Sont les selections des experts",
+                "sont les meilleurs",
+                "Sont les plus populaires",
+                "ont des meilleurs services",
+            ],
+            typeSpeed: 60,
+            backSpeed: 20,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

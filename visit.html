@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Assets/FONTAWESOME/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./Images/ont.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/CSS/styles.css">
+  <title>YEBA - Kin | Visiter Kinshasa</title>
+</head>
+
+<body>
+
+  <div class="bg-success-subtle" id="loader">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 text-center">
+        <div>
+          <h1 class="text-center text-yebakin loader" style="font-size: 2.8em;"> YEBA Kin </h1>
+        </div>
+      </div>
+      <div class="col-12 py-4 text-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-2">
+              <!-- Spinner de Bootstrap -->
+              <div class="spinner p-4 d-flex justify-content-center " role="status">
+                <i class="">
+
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <div class="d-flex justify-content-center">
+          <span class="visually lucida text-center text-yebakin" style="font-size: 1.6em;">
+            Veuillez patienter
+          </span>
+        </div>
+        <div class="d-flex justify-content-center">
+          <span class="visually lucida text-center py-2 text-yebakin" style="font-size: 1.1em;">
+            En cours de chargement...
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content pt-5">
+    <div class="container-fluid nav-bg fixed-top entete2">
+      <div class="row d-flex justify-content-between align-items-center px-2">
+        <div class="navbar d-flex text-light text-center col-lg-1 d-none d-lg-flex">
+          <div class="d-flex align-items-center">
+            <img src="./Images/ONT1.png" alt="Logo" class="img-fluid rounded-circle logo" />
+            <h4 class="navbar-brand text-light ok-titre ps-3 pointer-none">
+              YEBA KIN
+            </h4>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark col-md-10 col-lg-11 d-flex justify-content-between">
+          <div class="align-items-center">
+            <img src="./Images/ONT1.png" alt="Logo" class="img-fluid d-lg-none rounded-circle logo" />
+            <a class="navbar-brand d-lg-none lucida-text ok-titre pointer-none">
+              YEBA KIN
+            </a>
+          </div>
+          <button class="navbar-toggler text-end text-light btn-menu bouton-menu" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-end"> </span>
+            <span class="lucida-text menu"> Menu </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <button class="btn border-bottom-light bg-transparent text-light" onclick="Accueil();">
+                  Accueil
+                </button>
+              </li>
+              <li class="nav-item dropdown">
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="Apropos();">
+                  A propos
+                </button>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Découvertes
+                </button>
+                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="themathique();">
+                      Thématique
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="Edifices_publiques();">
+                      Edifices publics
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="place_publique();">
+                      Places publiques
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="infos();">
+                      Information utiles
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="sites();">
+                      Sites et Attractions
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="cartos();">
+                      Cartographie de Kinshasa
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Séjour à Kin
+                </button>
+                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="shopping();">
+                      Shopping
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="transports();">
+                      Transport
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="restaurants();">
+                      Restaurations
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="hebergements();">
+                      Hebergements
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu btn bg-transparent text-light"
+                      onclick="loisir();">
+                      Sports et Loisirs
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="dropdown-toggle btn bg-transparent text-light" type="button" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Circuits
+                </button>
+                <ul class="dropdown-menu entete2 nav-bg" aria-labelledby="navbarDropdown">
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                      Kin à vélo
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="excursion();">
+                      Excursion
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                      Village Touristique
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="Randonnees();">
+                      Kin et ses environs
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light"
+                      onclick="Randonnees();">
+                      Randonnées Fluviales
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                      Kin en 3 Jours et en 7 Jours
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item bouton-menu bttn btn bg-transparent text-light">
+                      Wewa Tour (Trycicles et motos)
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="Evenements();">
+                  Evenements
+                </button>
+              </li>
+              <li>
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="boites();">
+                  Kin By Night
+                </button>
+              </li>
+              <li>
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="services();">
+                  Services
+                </button>
+              </li>
+              <li>
+                <button type="button" class="border-bottom-light btn px-1 bg-transparent text-light"
+                  onclick="contacts();">
+                  Contacts
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="row d-flex justify-content-around align-items-center">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-0 text-center">
+            <img src="./Images/Users/default.jpg" alt="Images" class="p-0 w-75 h-75 shadow-sm rounded-2">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 pe-3 pb-0">
+            <div class="row text-center pb-2">
+              <h1 class="text-center h3 pt-4">Prêt à Visiter Kinshasa ?</h1>
+            </div>
+            <div>
+              <p class="text-justify" style="font-size: 1.1rem;">
+                <fidele>
+                  Kinshasa
+                </fidele>
+                la ville du combat du siècle Ali Foreman,
+                est prête à vous recevoir. Si vous
+                êtes prêt à le visiter pour la première fois, il se peut que vous vous sentiez un peu
+                perdu et que des milliers de questions vous viennent à l'esprit. Par où commencer
+                dans cette mégapole au cœur de l’Afrique? Quels sont les principaux sites ou attraits
+                à visiter? Nous allons tenter de répondre à ces questions dans les pages suivantes. <br>
+
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+            <div class="px-3 py-0">
+              <p class="text-justify lead">
+                Dans ce répertoire les lieux à visiter sont répartis en deux pôles constitués chacun
+                de différentes thématiques, à savoir:
+                <br>
+                Culture-histoire-patrimoine & religion Nature-
+                aventure-détente-sport& loisir La plupart des sites les plus remarquables sont
+                concentrés dans les régions périphériques de l'Ouest et de l'Est de la capitale, sans
+                oublier bien sûr le centre de la ville. Lola Ya Bonobo, le Parc de la vallée de la N
+                'sele,
+                pour ne citer que ces deux sites sont des joyaux de l’écotourisme localisés dans les
+                deux zones évoquées ci-haut. <br>
+                Safari beach, Sun Set, et tant d’autres sites de détente et de loisir y sont concentrés.
+                Le centre renferme plutôt des sites à caractère historique, mémoriel, culturel et
+                sportif, tels que le musée national de la RDC, l’académie des beaux-arts, le stade des
+                martyrs, le mausolée Laurent Désiré Kabila, etc.
+                Aqua Splash, le tout premier parc aquatique de Kinshasa, vous offre une panoplie
+                d’activités à faire en famille ou en amoureux...<br> En préparant au mieux vos itinéraires
+                par thème, vous pourrez ainsi pendant votre séjour, ou en une journée visiter
+                quelques endroits réputés essentiels.
+                Avec 94 sites proposés, il est difficile de tout voir. Certes nombreuses sont des
+                attractions passionnantes, mais en repérant à l’avance celles qui vous attirent le plus,
+                vous gagnerez beaucoup de temps. Et vous préserverez aussi votre énergie et votre
+                envie d’aller vous balader ailleurs.
+              </p>
+              <h3 class="py-2 text-center">
+                Que faire lors d’une première visite de la ville ?
+              </h3>
+              <p class="text-justify lead">
+                <fidele>
+                  Les
+                </fidele> visites
+                incontournables à faire à Kinshasa ne manquent pas. Découvrir l’espèce
+                endémique le bonobo, flâner dans les différentes salles du musée National de la RDC,
+                s’adonner à une randonnée fluviale sur le majestueux fleuve Congo, tant de
+                classiques que vous ne pouvez pas louper lors d’une visite de la capitale.
+                Tant de sites à Kinshasa, naissent et disparaissent. Celles énumérées ici
+                ne constituent pas une liste exhaustive.
+                Avec le concours de tous, nous pourrons actualiser ce répertoire, lors de la prochaine
+                édition. Entre-temps, nous vous souhaitons une belle évasion
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-end pb-4">
+          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 p-3 text-center">
+            <div>
+              <span class="h4 text-center">
+                Le Chef d'Agence Provincial de Kinshasa
+              </span>
+            </div>
+            <div class="p-4 border">
+              <span class="h5 p-2 text-center">
+                signature numérique
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+  <script src="./Assets/bootstrap-5.3.3-dist/js/jquery.js"></script>
+  <script src="./Scripts/Js.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementsByClassName('content').style.display = 'block';
+      });
+    });
+  </script>
+</body>
+
+</html>
