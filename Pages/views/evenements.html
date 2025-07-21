@@ -1,0 +1,127 @@
+<!--  -->
+<style>
+	textarea {
+		resize: none;
+	}
+</style>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-12">
+	<div class="row ">
+		<div class="col-xs-12 col-sm-12 col-md-12 mb-5">
+			<div class="card">
+				<div class="card-header text-center">
+					<h5 class="card-title mb-0 ">Gestion des Evenements </h5>
+				</div>
+				<div class="card-body text-center">
+					<form id="agentForm">
+						<div class="row">
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-none">
+								<label for="id" class="form-label">Id</label>
+								<input type="text" name="id" class="form-control" id="id" disabled>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="g_titre" class="form-label">Grand Titre</label>
+								<input type="text" name="g_titre" class="form-control" id="g_titre" required>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="p_titre" class="form-label">Petit Titre</label>
+								<input type="text" name="p_titre" class="form-control" id="p_titre" required>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="titre" class="form-label">Titre</label>
+								<input type="text" name="titre" class="form-control" id="titre" required>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="organisateur" class="form-label">Organisateur</label>
+								<input type="text" name="organisateur" class="form-control" id="organisateur" required>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="p_normal" class="form-label">Prix normal</label>
+								<input type="text" name="p_normal" class="form-control" id="p_normal" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="p_vip" class="form-label">Prix VIP</label>
+								<input type="text" name="p_vip" class="form-control" id="p_vip" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="d_prix" class="form-label">Dernier Prix</label>
+								<input type="text" name="d_prix" class="form-control" id="d_prix" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="duree" class="form-label">Durée de l'événement</label>
+								<input type="text" name="duree" class="form-control" id="duree" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="date" class="form-label">Date de l'événement</label>
+								<input type="date" name="date" class="form-control" id="date" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="heure" class="form-label">Heure de l'événement</label>
+								<input type="time" name="heure" class="form-control" id="heure" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="h_depart" class="form-label">Heure Départ</label>
+								<input type="time" name="h_depart" class="form-control" id="h_depart" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+								<label for="h_arriver" class="form-label">Heure d'arriver</label>
+								<input type="time" name="h_arriver" class="form-control" id="h_arriver" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 mb-3">
+								<label for="distance" class="form-label">Distance</label>
+								<input type="text" name="distance" class="form-control" id="distance" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-6 mb-3">
+								<label for="lieu" class="form-label">Lieu</label>
+								<input type="text" name="lieu" class="form-control" id="lieu" placeholder="Facultatif">
+							</div>
+							<div class="col-sm-12 mb-3">
+								<label for="images" class="form-label">Images de l'événement</label>
+								<input type="file" name="images" class="form-control" id="images" required>
+							</div>
+							<div class="col-sm-12 mb-3">
+								<label for="details" class="form-label">Détails de l'événement</label>
+								<textarea name="details" id="details" class="form-control"
+									placeholder="Veuillez entrez les détails de l'événement ici" required></textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer d-flex justify-content-around">
+					<button type="button" class="btn btn-primary mb-2" onclick="Ajout_evenement();">Enregistrer</button>
+					<button type="button" class="btn btn-info mb-2" onclick="Modifier();"> Modifier </button>
+					<button type="button" class="btn btn-danger mb-2" onclick="supprimer();"> Supprimer</button>
+					<button type="button" class="btn btn-secondary mb-2" onclick="nettoyer();"> Nettoyer</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 mb-5">
+			<div class="card">
+				<div class="card-header text-center">
+					<h5 class="card-title mb-0 ">Liste des Evénements</h5>
+				</div>
+				<div class="card-body text-center">
+					<div class="row">
+						<div class="table-responsive">
+							<table class="table table-success table-striped table-bordered border-light table-hover shadow-lg rounded-3">
+								<thead class="table-dark">
+									<tr>
+										<th>ID</th>
+										<th>Grand Titre</th>
+										<th>Petit titre</th>
+										<th>Titre</th>
+										<th>Organisateur</th>
+										<th>Détails</th>
+										<th>Date</th>
+									</tr>
+								</thead>
+								<tbody id="evenementTable">
+									<!--   Data will be loaded here via AJAX-->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
