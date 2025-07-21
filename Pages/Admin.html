@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Moderne</title>
+
+
+    <!-- CSS Libraries Locally-->
+    <link href="./Assets/bootstrapv5.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./Assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./Assets/font-awesome6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="./Assets/feather-icons/css/feathericon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/admin.css">
+    <style>
+        @import url(../CSS/admin.css);
+    </style>
+</head>
+
+<body>
+    <header class="header d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center d-none">
+            <button class="btn text-light me-3 " id="toggleSidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
+        <div class="d-flex align-items-center">
+            <h2 class="text-light me-3 h4" id="">
+                <i class="fas fa-bars"></i> YEBA Kin - Administrateur
+            </h2>
+
+        </div>
+        <div class="d-flex align-items-center">
+            <button class="btn text-light me-3 d-md-none" id="toggleSidebarA">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="dropdown ">
+                <button class="btn text-light dropdown-toggle" type="button" id="profileDropdown"
+                    data-bs-toggle="dropdown">
+                    <i class="fas fa-user-circle"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li onclick="accueil1();" class="pointer" style="cursor: pointer;">
+                        <a class="dropdown-item text-danger pointer">
+                            <i class="fas fa-sign-out-alt me-2"></i>
+                            Déconnexion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-profile">
+            <i class="fas fa-user-circle fa-3x text-light mb-2"></i>
+            <h6 class="text-light" id="username">Administrateur</h6>
+        </div>
+        <div class="sidebar-menu">
+            <div class="menu-item" data-menu="saisie">
+                <i class="fas fa-edit me-2"></i>
+                    Gestion du site
+                <i class="fas fa-chevron-right float-end rotate-icon"></i>
+            </div>
+            <div class="submenu" id="saisieSubmenu">
+                <div id="fagents" class="menu-item" onclick="Afficher('evenements');">Gestion des Evenements</div>
+                <div id="Clients" class="menu-item d-none" onclick="Afficher('fclients');">Clients</div>
+                <div id="Catégories" class="menu-item d-none" onclick="Afficher('fcategorie');">Catégories</div>
+                <div id="Commandes" class="menu-item d-none" onclick="Afficher('fcommande');">Commandes</div>
+                <div id="Stocks" class="menu-item d-none" onclick="Afficher('stock');">Stocks</div>
+            </div>
+
+            <div class="menu-item" data-menu="affichage">
+                <i class="fas fa-desktop me-2"></i>
+                    Affichages données
+                <i class="fas fa-chevron-right float-end rotate-icon"></i>
+            </div>
+            <div class="submenu" id="affichageSubmenu">
+                <div class="menu-item" onclick="Afficher('evenements_list');">Listes des événements</div>
+                <div class="menu-item d-none" onclick="Afficher('L_categorie');">Liste des Commandes enregistrées</div>
+                <div class="menu-item d-none" onclick="Afficher('L_clients');">Etat des Stocks</div>
+                <div class="menu-item d-none" onclick="Afficher('L_stock');">Liste des produits</div>
+            </div>
+
+            <div class="menu-item" data-menu="parametres">
+                <i class="fas fa-cog me-2"></i>
+                Paramètres
+                <i class="fas fa-chevron-right float-end rotate-icon"></i>
+            </div>
+            <div class="submenu" id="parametresSubmenu">
+                <div id="user" class="menu-item" onclick="Afficher('users');">Gestion des utilisateurs</div>
+                <div class="menu-item text-danger" onclick="accueil1();">Déconnexion</div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container-fluid">
+            <div class="row ContetCentral" id="contenu_generale">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-12">
+                    <div class="row justify-content-around mb-5">
+                        <div class="col-xs-12 col-sm-12 col-md-4 p-2 mb-4">
+                            <div class="card">
+                                <div class="card-header text-center d-flex justify-content-between">
+                                    <h5 class="card-title mb-0 ">Date Actuelle</h5>
+                                    <i class="fas fa-calendar m-2"></i>
+
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 id="date">99/99/999</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-4 p-2">
+                            <div class="card">
+                                <div class="card-header text-center d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Heure Actuelle </h5>
+                                    <i class="fas fa-clock m-2"></i>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 id="heure">99:99:99</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <div class="col-xs-12 col-sm-12 col-md-4 p-2">
+                        <div class="card">
+                            <div class="card-header text-center d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Agents </h5>
+                                <i class="fas fa-user m-2"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 id="heure">10</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-xs-12 col-sm-12 col-md-4 p-2">
+                        <div class="card">
+                            <div class="card-header text-center d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Clients </h5>
+                                <i class="fas fa-users m-2"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 id="heure">456</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-xs-12 col-sm-12 col-md-4 p-2">
+                        <div class="card">
+                            <div class="card-header text-center d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Stocks </h5>
+                                <i class="fas fa-cart-plus m-2"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 id="heure">for exemple</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./Assets/bootstrapv5.2.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../Scripts/Js.js"></script>
+    <script src="./js.js"></script>
+    <script>
+        window.onload = function () {
+            showDate();
+            validation();
+            evenementTable();
+        }
+
+        $(document).ready(function () {
+
+            // Toggle Sidebar on mobile
+            $('#toggleSidebar').click(function () {
+                $('.sidebar').toggleClass('active');
+            });
+
+            // Handle menu clicks
+            $('.menu-item[data-menu]').click(function () {
+                const menuId = $(this).data('menu');
+                const submenu = $(`#${menuId}Submenu`);
+                const icon = $(this).find('.rotate-icon');
+
+                // Close other submenus
+                $('.submenu').not(submenu).slideUp();
+                $('.rotate-icon').not(icon).removeClass('active');
+
+                // Toggle current submenu
+                submenu.slideToggle();
+                icon.toggleClass('active');
+            });
+
+            // Example AJAX call to load table data
+
+            // function loadTableData() {
+            //     $.ajax({
+            //         url: 'your-api-endpoint',
+            //         method: 'GET',
+            //         success: function (data) {
+            //             // Assuming data is an array of agents
+            //             let html = '';
+            //             data.forEach(agent => {
+            //                 html += `
+                               
+            //                 `;
+            //             });
+            //             $('#agentsTableBody').html(html);
+            //         },
+            //         error: function (xhr, status, error) {
+            //             console.error('Error loading data:', error);
+            //         }
+            //     });
+            // }
+
+            // Handle form submission
+            // $('#agentForm').submit(function (e) {
+            //     e.preventDefault();
+            //     const formData = {
+            //         nom: $('#nom').val(),
+            //         prenom: $('#prenom').val()
+            //     };
+
+            //     $.ajax({
+            //         url: 'your-api-endpoint',
+            //         method: 'POST',
+            //         data: formData,
+            //         success: function (response) {
+            //             alert('Agent enregistré avec succès!');
+            //             $('#agentForm')[0].reset();
+            //             loadTableData();
+            //         },
+            //         error: function (xhr, status, error) {
+            //             alert('Erreur lors de l\'enregistrement');
+            //         }
+            //     });
+            // });
+
+            // Initial load of table data
+            // loadTableData();
+        });
+    </script>
+</body>
+
+</html>
